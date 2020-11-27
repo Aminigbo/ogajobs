@@ -373,3 +373,401 @@ large screen
     text-decoration: none;
   }
 }
+
+
+
+
+
+
+
+/* 
+large screen
+--------------------------------*/
+@media only screen and (max-width: 690px) {
+  .section1 {
+    position: absolute;
+  width: 100%;
+  left: 0px;
+  height: 927px;
+  top: -3px;
+  left: auto;
+    right: auto;
+  background: linear-gradient(179.84deg, #82D4C9 -158.45%, rgba(130, 212, 201, 0) 104.55%);
+  }
+
+  .about{
+    position: absolute;
+  width: 75px;
+  height: 21px;
+  left: 701px;
+  top: 47px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+display:none;
+
+  color: #17282F;
+  }
+
+  .find{
+    position: absolute;
+  width: 79px;
+  height: 21px;
+  left: 833px;
+  top: 47px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+display:none;
+
+  color: #17282F;
+  }
+
+  .blog{
+    position: absolute;
+  width: 37px;
+  height: 21px;
+  left: 966px;
+  top: 47px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+display:none;
+  color: #17282F;
+  }
+
+  .post-job{
+    position: absolute;
+    width: 87px;
+    height: 21px;
+    left: 1063px;
+    top: 47px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+display:none;
+
+    color: #00CEC9;
+  }
+
+  .join-us{
+    position: absolute;
+    width: 134px;
+    height: 48px;
+    left: 1207px;
+    top: 33px;
+    color:white;
+    background: #00B894;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+  line-height: 21px;
+  display:none;
+  }
+
+  .vector1{
+    position: absolute;
+    width: 61px;
+    height: 37px;
+    left: 68px;
+    top: 37px;
+  }
+
+  .dream-jobs{
+    position: absolute;
+    /* width: 100%; */
+    height: 300px;
+    /* left: 47px; */
+    top: 90px;
+    padding-left:30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 50px;
+
+    color: #17282F;
+  }
+
+  .preamble{
+    position: absolute;
+    /* width: 443px; */
+    height: 84px;
+    /* left: 47px; */
+    top: 240px; 
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    padding:10px 30px;
+
+    color: #273E47;
+  }
+
+  .vector2{
+    position: absolute;
+    width: 280px;
+    height: 200.32px;
+    left: 40px;
+    top: 329px;
+  }
+   
+
+  /* find next job button */
+  .next_job{
+    position: absolute;
+    width: 160px;
+    /* height: 57px; */
+    left: 10px;
+    top: 564px;
+    padding: 9px 10px;
+    text-align: center;
+    font-size: 14px;
+    /* line-height: 21px; */
+    color:white;
+    background: #00B894;
+    border-radius: 10px; 
+  }
+
+  .hire_talent{
+    position: absolute;
+    width: 160px;
+    /* height: 57px; */
+    right: 10px;
+    top: 564px;
+    padding:9px 10px;
+    text-align: center;
+    font-size: 14px;
+    /* line-height: 21px; */
+    color:white;
+    background: #273E47;
+    border-radius: 10px;
+  }
+
+  .search_title{
+    position: absolute;
+    /* width: 431px; */
+    height: 45px;
+    left: 10%;
+    top: 624px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 40px;
+    display:none;
+    color: #17282F;
+  }
+
+  .search-form{
+    position: absolute;
+    width: 80%;
+    height: 52px;
+    left: 10%;
+    top: 644px;
+
+    background: #FAFAF9;
+    border: 1px solid #33535F;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 25px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding:10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+    display:none;
+  }
+
+  .dpt-header{
+    position: absolute;
+    width: 312px;
+    height: 60px;
+    left: 0px;
+    top: 746px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+
+    color: #17282F;
+    display:none;
+  }
+
+  .dpt-header-title{
+    position: absolute;
+    width: 376px;
+    height: 23px;
+    left: 539px;
+    top: 996px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #17282F;
+    display:none;
+  }
+
+  .dpt-slider{
+    position: absolute;
+    width: 100%;
+    height: 280px;
+    /* left: 79px; */
+    top: 1070px; 
+    display:none;
+  }
+
+  .item{
+    /* background-color: #00B894; */
+    width: 260px;
+    height: 280px;
+    text-align: left !important;
+    padding: 20px;
+    display:none;
+  }
+
+  .item-img{
+     width: 70px !important;
+     height: 70px !important;
+     margin-left: 36%;
+     display:none;
+  }
+
+  .more{
+    position: absolute;
+    width: 325px;
+    height: 40px;
+    left: 548px;
+    top: 1390px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 40px;
+    /* identical to box height */
+
+
+    color: #000000;
+    display:none;
+  }
+
+  .blog1{
+    position: absolute;
+    width: 300px;
+    height: 381px;
+    left: 23px;
+    top: 1470px;
+    display:none;
+  }
+
+  .blog2{
+    position: absolute;
+    width: 300px;
+    height: 381px;
+    left: 355px;
+    top: 1470px;
+    display:none;
+  }
+
+  .blog3{
+    position: absolute;
+    width: 300px;
+    height: 381px;
+    left: 690px;
+    top: 1470px;
+    display:none;
+  }
+
+  .blog4{
+    position: absolute;
+    width: 300px;
+    height: 381px;
+    right: 23px;
+    top: 1470px;
+    display:none;
+  }
+
+  .footer{
+    position: absolute;
+    width: 100%;
+    height: 317px;
+    left: 0px;
+    top: 1980px;
+
+    background:#005B49;
+    display:none;
+  }
+
+  .footer-vector{
+    width: 61px;
+    height: 37px;
+    margin-left: 10%;
+    margin-top: 66px;
+    display:none;
+  }
+
+  .who-we-are{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 10%;
+    width: 80%;
+    color: #FFFFFF;
+    display:none;
+  }
+
+  .social{
+    float:right;
+    display:none;
+  }
+  .social-icons{
+    margin:0px 20px;
+    display:none;
+  }
+
+  .by{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    left: 0px;
+    top: 2300px;
+    background:#ffffff;
+    color:#273E47;
+    text-align: center;
+    display:none;
+  } 
+
+  a:hover{
+    text-decoration: none;
+    display:none;
+  }
+}

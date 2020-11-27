@@ -47,13 +47,16 @@
 
     <div class="dream-jobs wow fadeInLeft">Dream <span class="color">Jobs</span>. Top <span class="color">Talent</span>. 
     All in <span class="color">One</span> <span class="color">Place</span>.</div>
+    
 
     <div class="preamble wow fadeInUp">
     Ready to post a job? Get started with Indeed, where you can post an open role in
      minutes. Jobs you pay to post on Indeed will also appear on Glassdoor.
     </div>
 
+    <div class="vector2-holder">
     <img src="assets/vectors/2.png" class="vector2 wow fadeInDown">
+    </div>
 
     <div class="two_btnss">
       <a href="" class="next_job wow fadeInUp">Find Your Next Job</a>
@@ -137,8 +140,9 @@
     </div>
 
     <div class="by">
+      Built with  <i class="fa fa-heart" style="color:red;"></i> by
       <a href="https://hthub.com.ng/" class="by-a">
-      Built with  <i class="fa fa-heart" style="color:red;"></i> by HARVOXX TECH. HUB
+       HARVOXX TECH. HUB
       </a>
     </div>
 
