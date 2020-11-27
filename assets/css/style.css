@@ -380,6 +380,12 @@ large screen
 
 
 
+
+
+
+
+
+
 /* 
 large screen
 --------------------------------*/
@@ -487,8 +493,8 @@ display:none;
     position: absolute;
     width: 61px;
     height: 37px;
-    left: 68px;
-    top: 37px;
+    left: 10%;
+    top: 27px;
   }
 
   .dream-jobs{
