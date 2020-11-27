@@ -71,11 +71,12 @@
       Search for Your Dream job
     </div>
 
-    <input type="text" name="" id="" class="search-form wow fadeInUp" placeholder="Search Job Title">
+    <input type="text" name="" id="" class="search-form wow fadeInUp"
+     placeholder="Search for Your Dream job">
 
-    <h class="dpt-header wow fadeInUp">
+    <div class="dpt-header wow fadeInUp">
     Choose Department
-    </h>
+    </div>
     
     <h class="dpt-header-title wow fadeInUp">
     The choice is yours, we’ve got you covered
