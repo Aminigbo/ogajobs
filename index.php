@@ -11,8 +11,8 @@
   <meta content="" name="description">
 
  <!-- Favicons -->
- <link href="img/logo-tik.jpg" rel="icon">
- <link href="img/logo-tik.jpg" rel="apple-touch-icon">
+ <link href="assets/vectors/1.png" rel="icon">
+ <link href="assets/vectors/1.png" rel="apple-touch-icon">
  
 
   <!-- Vendor CSS Files -->
