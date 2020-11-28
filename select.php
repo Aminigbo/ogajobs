@@ -39,8 +39,8 @@
     
   <div class="heada">
     <a href="./" >
-      <img src="assets/vectors/11.png" class="vector1 wow fadeInDown one" style="z-index:2000;">
-      <!-- <img src="assets/vectors/11.png" class="vector1 one-one" style="z-index:2000;display:none;width: 41px; height: 27px;">-->
+      <img src="assets/vectors/1.png" class="vector1 wow fadeInDown one" style="z-index:2000;">
+      <img src="assets/vectors/11.png" class="vector1 one-one" style="z-index:2000;display: ;width: 41px; height: 27px;">
 
     </a>
     
@@ -54,9 +54,7 @@
        
 
     <div class="two_btnss">
-      <a href="" class="type wow fadeInUp">Job Type</a>
-      <a href="" class="location wow fadeInUp">Location</a>
-      <a href="" class="company wow fadeInUp">Company</a>
+      <a href="" class="type wow fadeInUp">Filter Jobs</a> 
     </div>
 </div>
 <br><br><br>
@@ -65,62 +63,47 @@
         <?php for ($i=0; $i < 4; $i++) { 
             ?>
             <div class="jobs">
-            <img src="assets/vectors/1.png" class="one-one" style="">
+            <img src="assets/vectors/1.png" class="one-one" style="width:10%"><br>
 
             <b class="j-title">
                 SoftWare Engineering
+            </b> <br>
+
+            <span style="font-size:13px;">
+            Harvoxx engineering
+            </span> <br>
+            <span style="font-size:13px;">
+            Port harcout
+            </span> <br> <br>
+
+            <div>
+            <span style="font-size:13px;">
+            ₦85,000 - ₦100,000 a month
+
+            </span>
+            </div>
+
+            <b class="j-title">
+            Urgently hiring
             </b>
-    </div><?php
+
+            <div>
+            <span style="font-size:14px;">
+                Desktop Technician will provide day to day local\remote desktop support,
+                receive inbound calls, answer questions, troubleshoot and document steps 
+                ......
+            </span>
+            </div>
+            <span style="font-size:14px;float:right;color:#00B894;">
+                2days ago
+            </span>
+
+    </div>
+    <?php
         } ?>
     </div>
     
-    
-  </section>
-  
-    <div class="search_title wow fadeInUp">
-      Search for Your Dream job
-    </div>
 
-    <input type="text" name="" id="" class="search-form wow fadeInUp"
-     placeholder="Search for Your Dream job">
-
-    <div class="dpt-header wow fadeInUp">
-    Choose Department
-    </div>
-    
-    <h class="dpt-header-title wow fadeInUp">
-    Just slide through, we’ve got you covered
-    </h>
-
-
-    <div class="dpt-slider wow fadeInUp">
-
-    <div class="owl-carousel owl-theme">
-      <div class="item">
-        <a href="">
-          <img src="assets/vectors/job1.png" class="item-img wow fadeInDown" > <br>
-          <p>
-            Accounting and accounts payable clerks, senior accountants,
-            controllers.
-          </p>
-        </a>
-      </div> 
-    
-
-    </div>
-    
-
-
-    </div>
-
-    <div class="more wow fadeInUp">
-        See Available Jobs
-    </div>
-
-    <img src="assets/vectors/sale.png" class="blog1" alt="">
-    <img src="assets/vectors/sale.png" class="blog2" alt="">
-    <img src="assets/vectors/sale.png" class="blog3" alt="">
-    <img src="assets/vectors/sale.png" class="blog4" alt="">
 
     <div class="footer">
     <img src="assets/vectors/footer.png" class="footer-vector wow fadeInDown">
@@ -165,6 +148,11 @@
        HARVOXX TECH. HUB
       </a>
     </div>
+    
+  </section>
+  
+    
+  
 
   <!-- <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a> -->
 

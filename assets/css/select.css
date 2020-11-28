@@ -17,7 +17,7 @@
     left: 0px;
     height: 927px;
     top: -3px;
-    background: linear-gradient(179.84deg, #82D4C9 -158.45%, rgba(130, 212, 201, 0) 104.55%);
+    /* background: linear-gradient(179.84deg, #82D4C9 -158.45%, rgba(130, 212, 201, 0) 104.55%); */
     }
   
     .about{
@@ -115,21 +115,31 @@
       top: 37px;
     }
   
-    .dream-jobs{
-      position: absolute;
-      width: 673px;
-      height: 300px;
-      left: 47px;
-      top: 114px;
-  
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 85px;
-      line-height: 100px;
-  
-      color: #17282F;
+    .jobs{
+        /* margin-top:70px; */
+        position: relative;
+        width: 28%;
+        height: 311px;
+        left: 1%;
+        padding:10px;
+        display: inline-block;
+        /* border: 0.5px solid black; */
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin:2%;
     }
+
+    j-title{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+
+        color: #17282F;
+    }
+
   
     .preamble{
       position: absolute;
@@ -390,10 +400,7 @@
   
     .one-one{
       display: none;
-    }
-    .one{
-      display: none;
-    }
+    }   
   }
   
   
@@ -420,7 +427,7 @@
     top: -3px;
     left: auto;
       right: auto;
-    background: linear-gradient(179.84deg, #82D4C9 -158.45%, rgba(130, 212, 201, 0) 104.55%);
+    /* background: linear-gradient(179.84deg, #82D4C9 -158.45%, rgba(130, 212, 201, 0) 104.55%); */
     }
   
     .menu{
@@ -509,10 +516,11 @@
         height: 311px;
         left: 5%;
         padding:10px;
-        border: 1px solid #FFFFFF;
+        /* border: 0.5px solid black; */
         box-sizing: border-box;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 10px;
+        margin-bottom:10px;
     }
 
     j-title{
@@ -671,11 +679,11 @@
     }
   
     .footer{
-      position: absolute;
+      /* position: relative; */
       width: 100%;
       /* height: ; */
       left: 0px;
-      top: 2790px;
+      /* top: 2790px; */
   
       background:#005B49;
       /* display:none; */
@@ -696,7 +704,7 @@
       font-family: Roboto;
       font-style: normal;
       font-weight: normal;
-      font-size: 18px;
+      font-size: 20px;
       line-height: 21px;
       margin-left: 10%;
       width: 80%;
@@ -718,7 +726,7 @@
       position: absolute;
       width: 100%; 
       left: 0px;
-      top: 3015px;
+      /* top: 3015px; */
       background:#ffffff;
       color:#273E47;
       text-align: center;
@@ -744,5 +752,8 @@
       position: fixed;
       /* display: none; */
       z-index: 200;
+    }
+    .one{
+        display: none;
     }
   }
