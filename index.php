@@ -80,7 +80,7 @@
     </div>
     
     <h class="dpt-header-title wow fadeInUp">
-    The choice is yours, we’ve got you covered
+    Just slide through, we’ve got you covered
     </h>
 
 
@@ -180,12 +180,15 @@
     smartSpeed:250,
     autoplayTimeout:3000,
     slideTransition:`linear`,
+    dots:true,
     responsive:{
         0:{
             items:2
         },
         600:{
-            items:3
+            items:3,
+            nav:true,
+            loop:true,
         },
         1000:{
             items:5
