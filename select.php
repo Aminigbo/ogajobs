@@ -49,27 +49,29 @@
       <a href="" class="find wow fadeInUp header-btns" style="z-index: 4200;">Find Job</a>
       <a href="" class="blog wow fadeInUp header-btns" style="z-index: 4200;">Blog</a>
 
-      <a href="" class="post-job wow fadeInUp" style="z-index: 4200;">Post a Job</a>
-      <a href="" class="join-us wow fadeInUp" style="z-index: 4200;">Join Us</a>
-    </div>
-
-    <div class="dream-jobs wow fadeInLeft">Dream <span class="color">Jobs</span>. Top <span class="color">Talent</span>. 
-    All in <span class="color">One</span> <span class="color">Place</span>.</div>
-    
-
-    <div class="preamble wow fadeInUp">
-    Ready to post a job? Get started with Indeed, where you can post an open role in
-     minutes. Jobs you pay to post on Indeed will also appear on Glassdoor.
-    </div>
-
-    <div class="vector2-holder">
-    <img src="assets/vectors/2.png" class="vector2 wow fadeInDown">
-    </div>
+      <a href="" class="post-job wow fadeInUp header-btns" style="z-index: 4200;">Post a Job</a>
+      <a href="" class="join-us wow fadeInUp header-btns" style="z-index: 4200;">Join Us</a>
+       
 
     <div class="two_btnss">
-      <a href="" class="next_job wow fadeInUp">Find Your Next Job</a>
+      <a href="" class="type wow fadeInUp">Job Type</a>
+      <a href="" class="location wow fadeInUp">Location</a>
+      <a href="" class="company wow fadeInUp">Company</a>
+    </div>
+</div>
+<br><br><br>
+    <div class="job-holder">
 
-      <a href="" class="hire_talent wow fadeInUp">Hire Talent</a>
+        <?php for ($i=0; $i < 4; $i++) { 
+            ?>
+            <div class="jobs">
+            <img src="assets/vectors/1.png" class="one-one" style="">
+
+            <b class="j-title">
+                SoftWare Engineering
+            </b>
+    </div><?php
+        } ?>
     </div>
     
     
