@@ -37,6 +37,7 @@
 
   <section id="section1" class="section1 header">
     <img src="assets/vectors/1.png" class="vector1 wow fadeInDown">
+    <img src="assets/vectors/bar.png" class="menu header-btns">
 
     <a href="" class="about wow fadeInUp header-btns">About Us</a>
     <a href="" class="find wow fadeInUp header-btns">Find Job</a>
@@ -90,19 +91,19 @@
         <img src="assets/vectors/job1.png" class="item-img wow fadeInDown" > <br>
         <p>
           Accounting and accounts payable clerks, senior accountants,
-           controllers, and more from Accountemps, Robert Half Management
-            Resources 
+           controllers.
         </p>
       </div> 
     
 
     </div>
+    
 
 
     </div>
 
     <div class="more wow fadeInUp">
-        More from Job finder
+        See Available Jobs
     </div>
 
     <img src="assets/vectors/sale.png" class="blog1" alt="">
@@ -125,7 +126,7 @@
       </b>
       
       <br><br>
-      <p class="wow fadeInDown">
+      <p class="wow fadeInDown footer-writeup-desk">
         Finding highly skilled employees can be time consuming and costly. And trying to find 
         a new job can be a frustrating experience. Find out how we can help you with your hiring 
         and job search needs.Finding highly skilled employees can be time consuming and costly.
@@ -136,6 +137,13 @@
         skilled employees can be time consuming and costly. And trying to find a new job can
         be a frustrating experience. Find out how we can help you with your hiring and job
         search needs.
+      </p>
+
+      <p class="wow fadeInDown footer-writeup-mobile">
+        Finding highly skilled employees can be time 
+        consuming and costly. And trying to find 
+        a new job can be a frustrating experience.
+        
       </p>
     </div>
     </div>
@@ -171,9 +179,10 @@
     autoplay:true,
     smartSpeed:250,
     autoplayTimeout:3000,
+    slideTransition:`linear`,
     responsive:{
         0:{
-            items:1
+            items:2
         },
         600:{
             items:3
