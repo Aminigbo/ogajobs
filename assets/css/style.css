@@ -3,6 +3,10 @@
   color:#00B894;
 }
 
+a{
+  color:black
+}
+
 /* 
 large screen
 --------------------------------*/
@@ -379,6 +383,17 @@ large screen
   .menu{
     display: none;
   }
+
+  .bar2{
+    display: none;
+  }
+
+  .one-one{
+    display: none;
+  }
+  .one{
+    display: none;
+  }
 }
 
 
@@ -413,7 +428,7 @@ large screen
     /* width: 75px;
     height: 21px; */
   right: 6%;
-  top: 27px;
+  top: 17px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -498,10 +513,10 @@ display:none;
 
   .vector1{
     position: absolute;
-    width: 61px;
-    height: 37px;
+    width: 51px;
+    height: 27px;
     left: 10%;
-    top: 27px;
+    top: 17px;
   }
 
   .dream-jobs{
@@ -612,6 +627,15 @@ display:none;
     line-height: 40px; 
   }
 
+  .search-form-fixed{
+    position: fixed;
+    width: 100%; 
+    left: 0%;
+    top: 50px; 
+    border-radius:0px;
+    z-index: 2000;
+  }
+
   .dpt-header{
     position: absolute;
     width: 80%;
@@ -633,7 +657,7 @@ display:none;
     position: absolute;
     width: 90%;
     height: 23px;
-    left: 13%;
+    left: 10%;
     top: 786px;
 
     font-family: Roboto;
@@ -785,5 +809,21 @@ display:none;
 
   a:hover{
     text-decoration: none; 
+  }
+  .heada{
+    background-color: #005B49;
+    width: 100%;
+    height: 55px; 
+    /* display: none; */
+    z-index: 200;
+  }
+
+  .head{
+    background-color: #005B49;
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    /* display: none; */
+    z-index: 200;
   }
 }

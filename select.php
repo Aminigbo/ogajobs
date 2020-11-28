@@ -22,7 +22,7 @@
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/select.css" rel="stylesheet">
 
 
 
@@ -95,7 +95,7 @@
 
     <div class="owl-carousel owl-theme">
       <div class="item">
-        <a href="select.php">
+        <a href="">
           <img src="assets/vectors/job1.png" class="item-img wow fadeInDown" > <br>
           <p>
             Accounting and accounts payable clerks, senior accountants,
