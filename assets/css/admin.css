@@ -1,0 +1,153 @@
+
+.color{
+    color:#00B894;
+  }
+  
+  a{
+    color:black
+  }
+
+  a:hover{
+    color:black
+  }
+  
+  /* 
+  large screen
+  --------------------------------*/
+  @media only screen and (min-width: 690px) {
+    .section1 {
+      position: absolute;
+    width: 100%;
+    left: 0px;
+    height: 927px;
+    top: -3px;
+    background: linear-gradient(179.84deg, #82D4C9 -158.45%, rgba(130, 212, 201, 0) 104.55%);
+    }
+  
+    .about{
+      position: absolute;
+    width: 75px;
+    height: 21px;
+    left: 701px;
+    top: 47px;
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+  
+  
+    color: #17282F;
+    }
+  
+    .find{
+      position: absolute;
+    width: 79px;
+    height: 21px;
+    left: 833px;
+    top: 47px;
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+  
+  
+    color: #17282F;
+    }
+  
+    .blog{
+      position: absolute;
+    width: 37px;
+    height: 21px;
+    left: 966px;
+    top: 47px;
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+  
+  
+    color: #17282F;
+    }
+  
+    .filter{
+      position: absolute;
+      width: 87px;
+      height: 21px;
+      left: 1063px;
+      top: 47px;
+        cursor: pointer;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+      /* identical to box height */
+  
+  
+      color: #00CEC9;
+    }
+  
+    .search{
+        position: absolute; 
+        left: 1207px;
+        top: 33px;
+        color:white;
+        /* background: #00B894; */
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 21px;
+        cursor: pointer;
+    }
+  
+    .vector1{
+      position: absolute;
+      width: 61px;
+      height: 37px;
+      left: 68px;
+      top: 37px;
+    }
+
+    .job-holder{
+        /* background-color:red; */
+        margin-top:100px;
+    }
+
+    .t-head{
+        text-align: center;
+    }
+
+  
+    .jobs{
+        /* margin-top:70px; */
+        position: relative;
+        width: 70%;
+        /* height: 311px; */
+        left: 15%;
+        padding:20px;
+        display: inline-block;
+        /* border: 0.5px solid black; */
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin:2%;
+    }
+    
+    input{
+        width: 400px;
+        height: 50px;
+        border-radius: 5px;
+        margin: 10px;
+        text-align: center;
+    }
+  } 

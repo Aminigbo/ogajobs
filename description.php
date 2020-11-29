@@ -60,8 +60,7 @@
 
         <?php for ($i=0; $i < 1; $i++) { 
             ?>
-        <div class="jobs">
-            <a href="" class="">
+        <div class="jobs"> 
             <div class="t-head">
             <img src="assets/vectors/1.png" class="" style="width:10%"><br>
 
@@ -75,13 +74,18 @@
                 <span style="font-size:13px;">
                 Port harcout
                 </span> <br> <br>
+                <b class="apply-pop" style="font-size:19px;float: ;background-color:#00B894;color:white;
+                padding:3px 8px;border-radius:5px;cursor:pointer">
+                APPLY
+                </b> <br><br>
+                <br>
             </div>
 
             <div>
             <span style="font-size:13px;">
             ₦85,000 - ₦100,000 a month
 
-            </span>
+            </span> 
             </div>
 
             <b class="j-title">
@@ -160,11 +164,10 @@
 
             </span>
             </div>
-            <b style="font-size:19px;float:right;color:#00B894;">
+            <b class="apply-pop" style="font-size:19px;float:right;background-color:#00B894;color:white;
+                padding:3px 8px;border-radius:5px;cursor:pointer">
                 APPLY
-            </b>
-
-            </a>
+            </b> 
         </div>
     <?php
         } ?>
@@ -218,7 +221,14 @@
   </section>
   
     
-  
+  <div class="reg-pop">
+      <div class="form-holders">
+          <span style="position:absolute;right:-15px;top:-15px;font-size:33px;color:red;" 
+          class="fa fa-times close-pop"></span>
+
+      </div>
+
+  </div>
 
   <!-- <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a> -->
 
@@ -283,6 +293,14 @@ $(document).ready(function() {
 
     });
 });
+
+// close reg pop
+    $(".close-pop").click(function(){
+        $(".reg-pop").fadeOut()
+    })
+    $(".apply-pop").click(function(){
+        $(".reg-pop").fadeIn()
+    })
 
 // $( ".search" )
 //   .mouseover(function() {

@@ -1,3 +1,4 @@
+<?php include 'controllers/db/index.php'; ?>
 <!DOCTYPE html>
 <html lang="en"> 
 
@@ -5,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="theme-color" content=" #005B49" />
-   <title>Oga Jobs</title>
+   <title>Job Padi</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -39,7 +40,7 @@
     
   <div class="heada">
     <a href="./" >
-      <img src="assets/vectors/11.png" class="vector1 wow fadeInDown one" style="z-index:2000;">
+      <img src="assets/vectors/11.png" class="vector1  one" style="z-index:2000;">
       <!-- <img src="assets/vectors/11.png" class="vector1 one-one" style="z-index:2000;display:none;width: 41px; height: 27px;">-->
 
     </a>
@@ -94,22 +95,31 @@
     <div class="dpt-slider wow fadeInUp">
 
     <div class="owl-carousel owl-theme">
-      <?php 
-        for ($i=0; $i < 7 ; $i++) { 
-          ?>
-
-          <div class="item">
-            <a href="select.php">
-              <img src="assets/vectors/job1.png" class="item-img wow fadeInDown" > <br>
-              <div style="text-align:center">
-                Accounting
-                
-              </div>
-            </a>
-          </div>
       <?php
+      
+      $sqlBX = "SELECT * FROM dpt"; 
+      $resultBX = mysqli_query($conn, $sqlBX);
+      $days_shared=mysqli_num_rows($resultBX);
+      if (mysqli_num_rows($resultBX)) {
+        while ($row=mysqli_fetch_assoc($resultBX)) {
+          $id=$row['id'];
+          $vector=$row['vector'];
+          $class=$row['class']; ?>
+            <div class="item">
+              <a href="select.php?class=<?php echo $id ?>">
+                <img src="<?php echo $vector ?>" class="item-img wow fadeInDown" > <br>
+                <div style="text-align:center">
+                  <?php echo $class ?>
+                    
+                </div>
+              </a>
+            </div>
+          <?php
+        }
       }
-      ?> 
+
+      ?>
+       
     
 
     </div>
@@ -122,10 +132,94 @@
         See Available Jobs
     </div>
 
-    <img src="assets/vectors/sale.png" class="blog1" alt="">
-    <img src="assets/vectors/sale.png" class="blog2" alt="">
+    <div class="jobHolders">
+      <?php 
+        
+        $sql = "SELECT * FROM jobs WHERE `status` = '1' "; 
+        $result = mysqli_query($conn, $sql); 
+        if (mysqli_num_rows($result)) {
+          while ($row=mysqli_fetch_assoc($result)) {
+            $id=$row['id'];
+            $firm=$row['firm'];
+            $location=$row['location'];
+            $position=$row['position'];
+            $salary=$row['salary'];
+            $description=$row['description'];
+            $language=$row['language'];
+            $expirence=$row['expirence'];
+            $age=$row['age'];
+            $skills=$row['skills'];
+            $avatar=$row['avatar'];
+            $date=$row['date'];
+            $status=$row['status'];
+              ?>
+              <div class="blog1">
+                <a href="description.php">
+                  <div style="text-align:center;">
+                    <img src="<?php echo $avatar; ?>" class="job-img" > 
+                  </div>
+                  <div class="blur">
+                    <div style="padding:10px;font-size:15px;">
+
+                    <img src="assets/vectors/1.png" class="" style="width:10%"><br>
+                    <br>
+                    <b class="j-title">
+                      <?php echo $avatar; ?>
+                    </b> <br>
+
+                    <span style="font-size:13px;">
+                    <?php echo $firm; ?>
+                    </span> <br>
+                    <span style="font-size:13px;">
+                    <?php echo $location; ?>
+                    </span> <br> <br>
+
+                    <div>
+                    <span style="font-size:13px;">
+                    <b><?php echo $salary; ?> / Month</b>
+
+                    </span>
+                    </div>
+                    <br>
+                    <b class="j-title" style="font-size:21px;color:#00B894;"> 
+                    Urgently hiring
+                    </b>
+
+                    <div>
+                    <span style="font-size:14px;">
+                    <?php 
+                      if (strlen($description)>140) {
+                          $string=substr($description, 0,140)."...";
+                          }else{
+                          $string=$description;
+                          }
+                          echo $string;
+
+                          ?>
+                    </span>
+                    </div> <br>
+                    <span style="font-size:14px;float:right;color:#00B894;">
+                        2days ago
+                    </span>
+
+                     <br>
+                      
+                      <b style="float: ;font-size:20px;">View</b>
+                    </div>
+                  </div>
+                </a>
+                
+              </div>
+            
+            <?php
+          }
+        }
+    
+      ?>
+    </div>
+    <!-- <img src="assets/vectors/sale.png" class="blog2" alt="">
     <img src="assets/vectors/sale.png" class="blog3" alt="">
-    <img src="assets/vectors/sale.png" class="blog4" alt="">
+    <img src="assets/vectors/sale.png" class="blog4" alt=""> -->
 
     <div class="footer">
     <img src="assets/vectors/footer.png" class="footer-vector wow fadeInDown">
@@ -155,10 +249,11 @@
         search needs.
       </p>
 
-      <p class="wow fadeInDown footer-writeup-mobile" style="font-weight:none;font-size:12px;">
+      <p class="wow fadeInDown footer-writeup-mobile" style="font-weight:none;font-size:15px;">
         Finding highly skilled employees can be time 
         consuming and costly. And trying to find 
         a new job can be a frustrating experience.
+        <br><br>
         
       </p>
     </div>
@@ -199,7 +294,7 @@
     dots:true,
     responsive:{
         0:{
-            items:2
+            items:3
         },
         600:{
             items:3,

@@ -1,3 +1,4 @@
+<?php include 'controllers/db/index.php'; ?>
 <!DOCTYPE html>
 <html lang="en"> 
 
@@ -57,9 +58,9 @@
 </div>
 
 <br><br>
-    <div class="job-holder">
+    <div class="job-holder"> 
 
-        <?php for ($i=0; $i < 4; $i++) { 
+        <?php for ($i=0; $i < 14; $i++) { 
             ?>
         <div class="jobs">
             <a href="description.php" class="">
@@ -105,21 +106,25 @@
     </div>
     
     <div class="two_btnss">
-    <a href="" class="type wow fadeInUp">Engineer</a>
-    <a href="" class="type wow fadeInUp">Project manager</a>
-    <a href="" class="type wow fadeInUp">Receptionist</a>
-    <a href="" class="type wow fadeInUp">Chef</a>
-    <a href="" class="type wow fadeInUp">Manager</a>
-    <a href="" class="type wow fadeInUp">Marketing</a>
-    <a href="" class="type wow fadeInUp">Pharmacist</a>
-    <a href="" class="type wow fadeInUp">Teacher</a> 
-    <a href="" class="type wow fadeInUp">Medical Doctor</a>
-    <a href="" class="type wow fadeInUp">Operations officer</a>
-    <a href="" class="type wow fadeInUp">Accountant</a>
-    <a href="" class="type wow fadeInUp">Software engineer</a>
-    <a href="" class="type wow fadeInUp">Cashier</a>
-    <a href="" class="type wow fadeInUp">Supervisor</a>
-    <a href="" class="type wow fadeInUp">Interns</a>
+
+    <?php
+      
+      $sqlBX = "SELECT * FROM dpt"; 
+      $resultBX = mysqli_query($conn, $sqlBX);
+      $days_shared=mysqli_num_rows($resultBX);
+      if (mysqli_num_rows($resultBX)) {
+        while ($row=mysqli_fetch_assoc($resultBX)) {
+          $id=$row['id'];
+          $vector=$row['vector'];
+          $class=$row['class']; ?>
+          <a href="select.php?class=<?php echo $id ?>" class="type wow fadeInUp">
+          <?php echo $class ?>
+          </a> 
+          <?php
+        }
+      }
+
+      ?> 
 </div>
 
     <div class="footer">
@@ -156,12 +161,13 @@
         a new job can be a frustrating experience.
         <br><br>
       </p>
-    </div><div class="by">
+    </div>
+    </div>
+    <div class="by">
       Built with  <i class="fa fa-heart" style="color:red;"></i> by
       <a href="https://hthub.com.ng/" class="by-a">
        HARVOXX TECH. HUB
       </a>
-    </div>
     </div>
 
     
