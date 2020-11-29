@@ -94,15 +94,22 @@
     <div class="dpt-slider wow fadeInUp">
 
     <div class="owl-carousel owl-theme">
-      <div class="item">
-        <a href="select.php">
-          <img src="assets/vectors/job1.png" class="item-img wow fadeInDown" > <br>
-          <p>
-            Accounting and accounts payable clerks, senior accountants,
-            controllers.
-          </p>
-        </a>
-      </div> 
+      <?php 
+        for ($i=0; $i < 7 ; $i++) { 
+          ?>
+
+          <div class="item">
+            <a href="select.php">
+              <img src="assets/vectors/job1.png" class="item-img wow fadeInDown" > <br>
+              <div style="text-align:center">
+                Accounting
+                
+              </div>
+            </a>
+          </div>
+      <?php
+      }
+      ?> 
     
 
     </div>
