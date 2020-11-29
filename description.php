@@ -22,7 +22,7 @@
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/select.css" rel="stylesheet">
+  <link href="assets/css/desc.css" rel="stylesheet">
 
 
 
@@ -53,16 +53,15 @@
       <img src="assets/vectors/search.png" class="search wow fadeInUp header-btns" style="z-index:2000;display:inline-block"> 
        
 
-     <input type="text" name="" id="" class="search-form" placeholder="Search for Your Dream job">
 </div>
 
-<br><br>
+<br>
     <div class="job-holder">
 
-        <?php for ($i=0; $i < 4; $i++) { 
+        <?php for ($i=0; $i < 1; $i++) { 
             ?>
         <div class="jobs">
-            <a href="description.php" class="">
+            <a href="" class="">
             <img src="assets/vectors/1.png" class="" style="width:10%"><br>
 
             <b class="j-title">
@@ -89,14 +88,79 @@
 
             <div>
             <span style="font-size:14px;">
-                Desktop Technician will provide day to day local\remote desktop support,
-                receive inbound calls, answer questions, troubleshoot and document steps 
-                ......
+            Desktop Technician will provide day to day local\remote desktop support,
+             receive inbound calls, answer questions, troubleshoot and document steps
+              performed to resolve challenges with hardware, software and application 
+              issues in a ticketing system.
+
+            <br><br><br>
+            <b>Position Responsibilities and Functions</b>
+            <br><br> a) Provide first/second level contact and problem resolution for customer issues.
+
+            <br><br> b) Work with Third Party Vendors to remediate complex AV issues as needed.
+
+            <br><br> c) Provide timely communication on issue status and resolution.
+
+            <br><br> d) Maintain ticket updates for all reported incidents.
+
+            <br><br> e) Install, upgrade, support and troubleshoot XP, Windows 7, Windows 8.1, Windows 10 and Microsoft Office 2010, Cisco Jabber, another authorized desktop application.
+
+             
+
+            <br><br><br>Candidate Required Minimum Qualifications and Skills
+
+            <br><br> a) Bachelor’s Degree or equivalent in Computer Science or related field.
+
+            <br><br> b) CompTIA A+, Microsoft Certified Professional (MCP) or better.
+
+            <br><br> c) Minimum of 18 months years of IT experience.
+
+            d) Windows 7-10, Microsoft Active Directory, utilization of GPOs, MS Office 365, PC hardware installation and troubleshooting, Enterprise anti-virus solutions, Helpdesk ticketing systems.
+
+             
+
+           <br><br><br> <b>ESSENTIAL SKILLS:</b>
+
+            Behavioural –
+
+            Well mannered, willing to learn
+
+           <br><br><br> 
+           <b>Technical</b>
+
+           <br><br> a) Windows 7-10, Microsoft Active Directory, utilization of GPOs, MS Office 365, PC hardware installation and troubleshooting, Enterprise anti-virus solutions, Helpdesk ticketing systems.
+
+           <br><br> b) Mobile device management including IOS and Android devices, Enterprise encryption solutions, Windows PC/laptop management via Active Directory.
+
+           <br><br> c) Proven analytical, troubleshooting and problem-solving skills.
+
+           <br><br> d) Proven ability to multi-task, effectively determine priorities and meet SLA’s.
+
+             
+
+           <br><br><br> <b>LANGUAGE SKILLS – [level A1-C2]</b>
+
+            1. Local Language Fluent
+
+            2. English – B3
+
+            Job Type: Full-time
+
+            <br><br><br>
+            <b>Experience:</b>
+
+            <br><br>Desktop support: 2 years (Preferred)
+            Language:
+
+            <br><br>nigerian (Preferred)
+            English (Preferred)
+            Work Remotely: 
+
             </span>
             </div>
-            <span style="font-size:14px;float:right;color:#00B894;">
-                2days ago
-            </span>
+            <b style="font-size:19px;float:right;color:#00B894;">
+                APPLY
+            </b>
 
             </a>
         </div>
@@ -104,23 +168,6 @@
         } ?>
     </div>
     
-    <div class="two_btnss">
-    <a href="" class="type wow fadeInUp">Engineer</a>
-    <a href="" class="type wow fadeInUp">Project manager</a>
-    <a href="" class="type wow fadeInUp">Receptionist</a>
-    <a href="" class="type wow fadeInUp">Chef</a>
-    <a href="" class="type wow fadeInUp">Manager</a>
-    <a href="" class="type wow fadeInUp">Marketing</a>
-    <a href="" class="type wow fadeInUp">Pharmacist</a>
-    <a href="" class="type wow fadeInUp">Teacher</a> 
-    <a href="" class="type wow fadeInUp">Medical Doctor</a>
-    <a href="" class="type wow fadeInUp">Operations officer</a>
-    <a href="" class="type wow fadeInUp">Accountant</a>
-    <a href="" class="type wow fadeInUp">Software engineer</a>
-    <a href="" class="type wow fadeInUp">Cashier</a>
-    <a href="" class="type wow fadeInUp">Supervisor</a>
-    <a href="" class="type wow fadeInUp">Interns</a>
-</div>
 
     <div class="footer">
     <img src="assets/vectors/footer.png" class="footer-vector wow fadeInDown">
@@ -218,7 +265,7 @@ $(document).ready(function() {
     $(window).scroll(function() {
         var windowpos = $(window).scrollTop();
 
-        if (windowpos > 500) {
+        if (windowpos > 900) {
           $(".heada").addClass("head"); 
           
         } else if(windowpos < 1) {
@@ -228,7 +275,7 @@ $(document).ready(function() {
         if (windowpos > 605) {
           $(".search-form").addClass("search-form-fixed"); 
           
-        } else if(windowpos < 1) {
+        } else if(windowpos < 200) {
           $(".search-form").removeClass("search-form-fixed"); 
         }
 
