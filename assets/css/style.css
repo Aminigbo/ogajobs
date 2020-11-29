@@ -672,14 +672,15 @@ display:none;
   .dpt-slider{
     position: absolute;
     width: 100%;
-    height: 100px;
+    /* height: 1100px; */
     left: 0px;
     top: 846px; 
-    /* display:none; */ 
+    /* display:none; */
+    background-color: #00B894 !important;
   }
 
   .item{
-    background-color: #00B894 !important;
+    
     width: 207px;
     height: 160px;
     text-align: center !important;
