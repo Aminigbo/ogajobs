@@ -62,18 +62,20 @@
             ?>
         <div class="jobs">
             <a href="" class="">
+            <div class="t-head">
             <img src="assets/vectors/1.png" class="" style="width:10%"><br>
 
-            <b class="j-title">
-                SoftWare Engineering
-            </b> <br>
+                <b class="j-title">
+                    SoftWare Engineering
+                </b> <br>
 
-            <span style="font-size:13px;">
-            Harvoxx engineering
-            </span> <br>
-            <span style="font-size:13px;">
-            Port harcout
-            </span> <br> <br>
+                <span style="font-size:13px;">
+                Harvoxx engineering
+                </span> <br>
+                <span style="font-size:13px;">
+                Port harcout
+                </span> <br> <br>
+            </div>
 
             <div>
             <span style="font-size:13px;">
