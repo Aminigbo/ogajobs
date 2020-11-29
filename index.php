@@ -119,7 +119,7 @@
     </div>
 
     <div class="more wow fadeInUp">
-        Sesse Available Jobs
+        See Available Jobs
     </div>
 
     <img src="assets/vectors/sale.png" class="blog1" alt="">
