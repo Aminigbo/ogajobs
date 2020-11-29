@@ -43,27 +43,26 @@
       <img src="assets/vectors/11.png" class="vector1 one-one" style="z-index:2000;display: ;width: 41px; height: 27px;">
 
     </a>
-    
-    <img src="assets/vectors/bar2.png" class="menu header-btns bar" style="z-index:2000;">
+    <img src="assets/vectors/bar2.png" class="menu" style="z-index:2000;">
       <a href="" class="about wow fadeInUp header-btns" style="z-index: 4200;">About Us</a>
-      <a href="" class="find wow fadeInUp header-btns" style="z-index: 4200;">Find Job</a>
+      <a href="" class="find wow fadeInUp header-btns" style="z-index: 4200;">Post Job</a>
       <a href="" class="blog wow fadeInUp header-btns" style="z-index: 4200;">Blog</a>
 
-      <a href="" class="post-job wow fadeInUp header-btns" style="z-index: 4200;">Post a Job</a>
-      <a href="" class="join-us wow fadeInUp header-btns" style="z-index: 4200;">Join Us</a>
+      <b class="filter wow fadeInUp header-btns" style="z-index: 4200;">Filter</b>
+      
+      <img src="assets/vectors/search.png" class="search wow fadeInUp header-btns" style="z-index:2000;display:inline-block"> 
        
 
-    <div class="two_btnss">
-      <a href="" class="type wow fadeInUp">Filter Jobs</a> 
-    </div>
+     <input type="text" name="" id="" class="search-form" placeholder="Search for Your Dream job">
 </div>
-<br><br><br>
+
+<br><br>
     <div class="job-holder">
 
         <?php for ($i=0; $i < 4; $i++) { 
             ?>
             <div class="jobs">
-            <img src="assets/vectors/1.png" class="one-one" style="width:10%"><br>
+            <img src="assets/vectors/1.png" class="" style="width:10%"><br>
 
             <b class="j-title">
                 SoftWare Engineering
@@ -103,7 +102,23 @@
         } ?>
     </div>
     
-
+    <div class="two_btnss">
+    <a href="" class="type wow fadeInUp">Engineer</a>
+    <a href="" class="type wow fadeInUp">Project manager</a>
+    <a href="" class="type wow fadeInUp">Receptionist</a>
+    <a href="" class="type wow fadeInUp">Chef</a>
+    <a href="" class="type wow fadeInUp">Manager</a>
+    <a href="" class="type wow fadeInUp">Marketing</a>
+    <a href="" class="type wow fadeInUp">Pharmacist</a>
+    <a href="" class="type wow fadeInUp">Teacher</a> 
+    <a href="" class="type wow fadeInUp">Medical Doctor</a>
+    <a href="" class="type wow fadeInUp">Operations officer</a>
+    <a href="" class="type wow fadeInUp">Accountant</a>
+    <a href="" class="type wow fadeInUp">Software engineer</a>
+    <a href="" class="type wow fadeInUp">Cashier</a>
+    <a href="" class="type wow fadeInUp">Supervisor</a>
+    <a href="" class="type wow fadeInUp">Interns</a>
+</div>
 
     <div class="footer">
     <img src="assets/vectors/footer.png" class="footer-vector wow fadeInDown">
@@ -139,15 +154,15 @@
         a new job can be a frustrating experience.
         
       </p>
-    </div>
-    </div>
-
-    <div class="by">
+    </div><div class="by">
       Built with  <i class="fa fa-heart" style="color:red;"></i> by
       <a href="https://hthub.com.ng/" class="by-a">
        HARVOXX TECH. HUB
       </a>
     </div>
+    </div>
+
+    
     
   </section>
   
@@ -217,6 +232,25 @@ $(document).ready(function() {
 
     });
 });
+
+// $( ".search" )
+//   .mouseover(function() {
+//     $( ".two_btnss" ).show();
+//   })
+//   .mouseout(function() {
+//     $( ".two_btnss" ).hide();
+//   });
+
+
+    $( ".filter" ) .click(function() {
+        $('html,body').animate({
+        scrollTop: $(".two_btnss").offset().top},
+        2000);
+    })
+
+$( ".search" ) .click(function() {
+    $( ".search-form" ).focus();
+  })
     
 </script>
 

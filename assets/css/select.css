@@ -74,13 +74,13 @@
     color: #17282F;
     }
   
-    .post-job{
+    .filter{
       position: absolute;
       width: 87px;
       height: 21px;
       left: 1063px;
       top: 47px;
-  
+        cursor: pointer;
       font-family: Roboto;
       font-style: normal;
       font-weight: bold;
@@ -92,19 +92,18 @@
       color: #00CEC9;
     }
   
-    .join-us{
-      position: absolute;
-      width: 134px;
-      height: 48px;
-      left: 1207px;
-      top: 33px;
-      color:white;
-      background: #00B894;
-      border-radius: 10px;
-      padding: 10px;
-      text-align: center;
-      font-size: 18px;
-    line-height: 21px;
+    .search{
+        position: absolute; 
+        left: 1207px;
+        top: 33px;
+        color:white;
+        /* background: #00B894; */
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 21px;
+        cursor: pointer;
     }
   
     .vector1{
@@ -114,6 +113,12 @@
       left: 68px;
       top: 37px;
     }
+
+    .job-holder{
+        /* background-color:red; */
+        margin-top:170px;
+    }
+
   
     .jobs{
         /* margin-top:70px; */
@@ -138,25 +143,8 @@
         line-height: 28px;
 
         color: #17282F;
-    }
+    } 
 
-  
-    .preamble{
-      position: absolute;
-      width: 443px;
-      height: 84px;
-      left: 47px;
-      top: 440px;
-  
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 28px;
-  
-      color: #273E47;
-    }
-  
     .vector2{
       position: absolute;
       width: 466.93px;
@@ -213,24 +201,20 @@
     }
   
     .search-form{
-      position: absolute;
-      width: 80%;
-      height: 72px;
-      left: 10%;
-      top: 792px;
-  
-      background: #FAFAF9;
-      border: 1px solid #33535F;
-      box-sizing: border-box;
-      box-shadow: 0px 4px 25px 5px rgba(0, 0, 0, 0.25);
-      border-radius: 10px;
-      padding:10px;
-  
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 34px;
-      line-height: 40px;
+        position: absolute;
+        width: 95%;
+        height: 52px;
+        left: 2.5%;
+        top: 122px; 
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding:10px;
+        text-align: center;
+        font-family: Roboto;
+        font-style: normal;
+        /* font-weight: bold; */
+        font-size: 24px;
+        line-height: 40px;
     }
   
     .dpt-header{
@@ -342,7 +326,7 @@
       width: 100%;
       height: 317px;
       left: 0px;
-      top: 1980px;
+      /* top: 1980px; */
   
       background:#005B49;
     }
@@ -380,7 +364,7 @@
       position: absolute;
       width: 100%; 
       left: 0px;
-      top: 2300px;
+      /* top: 2300px; */
       background:#ffffff;
       color:#273E47;
       text-align: center;
@@ -400,7 +384,25 @@
   
     .one-one{
       display: none;
-    }   
+    }
+
+     /* find next job button */
+     .two_btnss{
+         
+        margin: 30px; 
+    }
+
+    
+    .type{ 
+      /* width: 100px;   */
+        padding: 4px 10px;
+        text-align: center;
+        font-size: 16px;
+        display: inline-block ;
+        color:#005B49; 
+        border-radius: 2px;
+        font-weight: bolder; 
+    }
   }
   
   
@@ -456,19 +458,22 @@
     }
   
     /* find next job button */
-    .type{
-      position: absolute;
-      width: 100px;
-      /* height: 57px; */
-      left: 10px;
-      top: 56px;
-      padding: 4px 10px;
-      text-align: center;
-      font-size: 14px;
-      /* line-height: 21px; */
-      color:white;
-      background: #00B894;
-      border-radius: 6px; 
+    .two_btnss{
+        position: absolute; 
+        left: 5%;
+        top: 56px;
+    }
+
+    
+    .type{ 
+      /* width: 100px;   */
+        padding: 4px 10px;
+        text-align: center;
+        font-size: 14px;
+        display: inline-block ;
+        color:#005B49; 
+        border-radius: 2px;
+        font-weight: bolder;
     }
 
      /* find next job button */
@@ -503,10 +508,9 @@
       background: #273E47;
       border-radius: 6px;
     }
-  
+    
     .job-holder{
-        /* background-color:red;
-        margin-top:70px; */
+        margin-top: 120px;
     }
 
     .jobs{
@@ -536,11 +540,11 @@
     .search-form{
       position: absolute;
       width: 80%;
-      height: 50px;
+      height: 48px;
       left: 10%;
-      top: 664px;
-  
-      background: #FAFAF9;
+      top: 56px;
+        display: none;
+      /* background: #FAFAF9; */
       border: 1px solid #33535F;
       box-sizing: border-box;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -561,6 +565,8 @@
       top: 50px; 
       border-radius:0px;
       z-index: 2000;
+      display: inline-block;
+      border:none;
     }
   
     .dpt-header{
