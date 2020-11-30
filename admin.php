@@ -1,3 +1,4 @@
+<?php include 'controllers/db/index.php'; ?>
 <!DOCTYPE html>
 <html lang="en"> 
 
@@ -75,6 +76,21 @@
 
             <div style="text-align:center;">
                 <form action="controllers/functions/admin/script.php" method="POST" enctype='multipart/form-data'>
+                    <select type="text" name="class" id="" placeholder="Enter Firm">
+                        <?php 
+                        
+                        $sql = "SELECT * FROM dpt "; 
+                        $result = mysqli_query($conn, $sql); 
+                        if (mysqli_num_rows($result)) {
+                          while ($row=mysqli_fetch_assoc($result)) {
+                            $class=$row['class']; ?>
+                                <option><?php echo $class; ?></option>
+                            <?php
+                            
+                          }
+                        }?>
+                    </select> <br>
+
                     <input type="text" name="firm" id="" placeholder="Enter Firm">
                     <input type="text" name="location" id="" placeholder="Enter location">
                     <input type="text" name="position" id="" placeholder="Enter Position">

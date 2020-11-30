@@ -4,12 +4,12 @@
 if (isset($_POST['add'])) {
     // GENERATE A UNIQUE USERNAME FOR EVERY brand
     function checkKeys($conn, $randStr){
-        $sql = "SELECT * FROM events"; 
+        $sql = "SELECT * FROM jobs"; 
         $result = mysqli_query($conn, $sql);
         if (mysqli_num_rows($result)) {
 
             while ($row=mysqli_fetch_assoc($result)) {
-            if ($row['ticket_id']== $randStr) { 
+            if ($row['code']== $randStr) { 
                 $keyExist = true;
                 break;
 
@@ -22,7 +22,7 @@ if (isset($_POST['add'])) {
     }
 
     function generateKey($conn){
-        $keyLenght = 8;
+        $keyLenght = 4;
         $str = "J5K4H55B6LE5L7K6";
         $randStr =substr(str_shuffle($str), 0, $keyLenght);
 
@@ -36,6 +36,7 @@ if (isset($_POST['add'])) {
         return $randStr;
 
     }
+    $code=generateKey($conn);
 
     
     
@@ -46,7 +47,7 @@ if (isset($_POST['add'])) {
     
     
     
-    
+    $class  = mysqli_real_escape_string($conn, $_POST['class']) ;
     $firm  = mysqli_real_escape_string($conn, $_POST['firm']) ;
     $location  = mysqli_real_escape_string($conn, $_POST['location']) ;
     $position  = mysqli_real_escape_string($conn, $_POST['position']) ;
@@ -70,8 +71,8 @@ if (isset($_POST['add'])) {
     || empty($desc)|| empty($responsibility)|| empty($language)|| empty($expirence)|| empty($age)) {
         header("location:../../../admin.php?callback=empty-field");
     }else{
-        $query = "INSERT INTO jobs (firm, `location`, position, salary,`description`,responsibility,`language`,expirence,age,skills,avatar,`date`,`status`) 
-      VALUES('$firm','$location', '$position', '$salary', '$desc', '$responsibility', '$language','$expirence', '$age', '$skills', '$surv_team_2_dp','$date','0')";
+        $query = "INSERT INTO jobs (class,firm, `location`, position, salary,`description`,responsibility,`language`,expirence,age,skills,avatar,`date`,`status`,code) 
+      VALUES('$class','$firm','$location', '$position', '$salary', '$desc', '$responsibility', '$language','$expirence', '$age', '$skills', '$surv_team_2_dp','$date','0','$code')";
       $success= mysqli_query($conn, $query);
       header("location:../../../admin.php?callback=success");
     }

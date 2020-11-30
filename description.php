@@ -1,3 +1,4 @@
+<?php include 'controllers/db/index.php'; ?>
 <!DOCTYPE html>
 <html lang="en"> 
 
@@ -58,21 +59,39 @@
 <br>
     <div class="job-holder">
 
-        <?php for ($i=0; $i < 1; $i++) { 
+        <?php
+        $get =  mysqli_real_escape_string($conn, $_GET['id']) ;
+        $sql = "SELECT * FROM jobs WHERE `status` = '1' AND id = '$get' "; 
+        $result = mysqli_query($conn, $sql); 
+        if (mysqli_num_rows($result)) {
+          while ($row=mysqli_fetch_assoc($result)) {
+            $id=$row['id'];
+            $firm=$row['firm'];
+            $location=$row['location'];
+            $position=$row['position'];
+            $salary=$row['salary'];
+            $description=$row['description'];
+            $language=$row['language'];
+            $expirence=$row['expirence'];
+            $age=$row['age'];
+            $skills=$row['skills'];
+            $avatar=$row['avatar'];
+            $date=$row['date'];
+            $status=$row['status'];
             ?>
         <div class="jobs"> 
             <div class="t-head">
-            <img src="assets/vectors/1.png" class="" style="width:10%"><br>
+            <img src="assets/vectors/1.png" class="" style="width:6%"><br>
 
                 <b class="j-title">
-                    SoftWare Engineering
+                <?php echo $position ?>
                 </b> <br>
 
                 <span style="font-size:13px;">
-                Harvoxx engineering
+                @<?php echo $firm ?>
                 </span> <br>
                 <span style="font-size:13px;">
-                Port harcout
+                <?php echo $location ?>
                 </span> <br> <br>
                 <b class="apply-pop" style="font-size:19px;float: ;background-color:#00B894;color:white;
                 padding:3px 8px;border-radius:5px;cursor:pointer">
@@ -83,86 +102,38 @@
 
             <div>
             <span style="font-size:13px;">
-            ₦85,000 - ₦100,000 a month
+            <?php echo $salary ?> / Month
 
             </span> 
             </div>
 
             <b class="j-title">
-            Urgently hiring
+            Urgently hiring 
             </b>
 
             <div>
             <span style="font-size:14px;">
-            Desktop Technician will provide day to day local\remote desktop support,
-             receive inbound calls, answer questions, troubleshoot and document steps
-              performed to resolve challenges with hardware, software and application 
-              issues in a ticketing system.
+            <?php echo $description ?>
 
             <br><br><br>
-            <b>Position Responsibilities and Functions</b>
-            <br><br> a) Provide first/second level contact and problem resolution for customer issues.
+            <b>EXPERIENCE</b>
+            <br> <?php echo $expirence ?>
+            
+            <br><br><br> <b> LANGUAGE SKILL</b> <br>
 
-            <br><br> b) Work with Third Party Vendors to remediate complex AV issues as needed.
-
-            <br><br> c) Provide timely communication on issue status and resolution.
-
-            <br><br> d) Maintain ticket updates for all reported incidents.
-
-            <br><br> e) Install, upgrade, support and troubleshoot XP, Windows 7, Windows 8.1, Windows 10 and Microsoft Office 2010, Cisco Jabber, another authorized desktop application.
-
-             
-
-            <br><br><br>Candidate Required Minimum Qualifications and Skills
-
-            <br><br> a) Bachelor’s Degree or equivalent in Computer Science or related field.
-
-            <br><br> b) CompTIA A+, Microsoft Certified Professional (MCP) or better.
-
-            <br><br> c) Minimum of 18 months years of IT experience.
-
-            d) Windows 7-10, Microsoft Active Directory, utilization of GPOs, MS Office 365, PC hardware installation and troubleshooting, Enterprise anti-virus solutions, Helpdesk ticketing systems.
-
-             
-
-           <br><br><br> <b>ESSENTIAL SKILLS:</b>
-
-            Behavioural –
-
-            Well mannered, willing to learn
+            <?php echo $language ?>
 
            <br><br><br> 
-           <b>Technical</b>
+           <b>TECHNICALS</b>
 
-           <br><br> a) Windows 7-10, Microsoft Active Directory, utilization of GPOs, MS Office 365, PC hardware installation and troubleshooting, Enterprise anti-virus solutions, Helpdesk ticketing systems.
+           <br><?php echo $skills ?>
+           
+           <br><br><br>
+           
+            <b>AGE RANGE:</b> 
 
-           <br><br> b) Mobile device management including IOS and Android devices, Enterprise encryption solutions, Windows PC/laptop management via Active Directory.
-
-           <br><br> c) Proven analytical, troubleshooting and problem-solving skills.
-
-           <br><br> d) Proven ability to multi-task, effectively determine priorities and meet SLA’s.
-
-             
-
-           <br><br><br> <b>LANGUAGE SKILLS – [level A1-C2]</b>
-
-            1. Local Language Fluent
-
-            2. English – B3
-
-            Job Type: Full-time
-
-            <br><br><br>
-            <b>Experience:</b>
-
-            <br><br>Desktop support: 2 years (Preferred)
-            Language:
-
-            <br><br>nigerian (Preferred)
-            English (Preferred)
-            Work Remotely: 
-
-            </span>
+            <br>
+            <?php echo $age ?> </span>
             </div>
             <b class="apply-pop" style="font-size:19px;float:right;background-color:#00B894;color:white;
                 padding:3px 8px;border-radius:5px;cursor:pointer">
@@ -170,7 +141,9 @@
             </b> 
         </div>
     <?php
-        } ?>
+        }
+       }
+        ?>
     </div>
     
 
@@ -225,6 +198,30 @@
       <div class="form-holders">
           <span style="position:absolute;right:-15px;top:-15px;font-size:33px;color:red;" 
           class="fa fa-times close-pop"></span>
+          <br>
+          <div style="text-align:center;">Fill out the forms to apply. </div><br>
+          <form method="POST"  action="controllers/functions/client/script.php"
+           onsubmit="return formOK;" enctype='multipart/form-data'>
+
+            <input type="text" required name="" id="" placeholder="Your fullname"> <br><br>
+            <input type="text" required name="" id="" placeholder="Your phone number"> <br><br>
+            <input type="text" required name="" id="" placeholder="Your email address"> <br><br>
+            <select name="" id="">
+              <option> -- SELECT GENDER --</option>
+              <option>MALE</option>
+              <option>FEMALE</option>
+            </select> <br><br>
+
+            <label class="lab" style="padding:45px 20px;text-align:center;background-color:#eee;cursor:pointer;">
+              Upload your vc
+              <input type="file" style="display:none;" class="cv" name="MyFile" onchange="validatePDF(this)">
+            </label> <br><br>
+
+            <input type="submit" name="" id="" class="apply" value="APPLY"
+            style="background-color:#005B49;border:none;color:white;font-weight:bold;
+            font-size:20px;display:none;"
+            >
+          </form>
 
       </div>
 
@@ -246,6 +243,36 @@
   $(document).ready(function(){
     // alert("")
   })
+
+  var formOK = false;
+
+  function validatePDF(objFileControl){
+  var file = objFileControl.value;
+  var len = file.length;
+  var ext = file.slice(len - 4, len);
+  if(ext.toUpperCase() == ".PDF" || ext  == "docx"|| ext == "doc"){
+    formOK = true;
+    // alert("good")
+    $(".apply").show()
+    $(".lab").css({
+      "background-color":"#3bc7ac",
+      "color":"clack"
+    }) 
+  }
+  else{
+    formOK = false;
+    alert("Only PDF and word files allowed.");
+    $(".cv").val("");
+    $(".apply").hide()
+    $(".lab").css({
+      "background-color":"crimson",
+      "color":"white"
+    }) 
+  }
+  }
+
+
+
 
   $('.owl-carousel').owlCarousel({
     loop:true,

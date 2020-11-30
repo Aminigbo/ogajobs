@@ -64,18 +64,21 @@
         if (isset($_GET['class'])) {
           $class = $_GET['class'];
           $sql = "SELECT * FROM jobs WHERE `status` = '1' AND category = '$class' "; 
-        }
-        else{
+        }elseif (isset($_GET['code'])) {
+            $code = $_GET['code'];
+            $sql = "SELECT * FROM jobs WHERE `status` = '1' AND code = '$code' ";
+          }
+          else{
           $sql = "SELECT * FROM jobs WHERE `status` = '1' "; 
         }
          
          $result = mysqli_query($conn, $sql); 
          if (mysqli_num_rows($result)) { ?>
 
-          <div class="" style="text-align:center;">
-            <b>Available Jobs</b>
-          </div>
-    <?php
+            <div class="" style="text-align:center;">
+                    <b>Your Filter Result</b>
+            </div>
+                <?php
            while ($row=mysqli_fetch_assoc($result)) {
              $id=$row['id'];
              $firm=$row['firm'];

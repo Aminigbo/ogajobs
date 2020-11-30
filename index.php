@@ -41,7 +41,7 @@
   <div class="heada">
     <a href="./" >
       <img src="assets/vectors/11.png" class="vector1  one" style="z-index:2000;">
-      <!-- <img src="assets/vectors/11.png" class="vector1 one-one" style="z-index:2000;display:none;width: 41px; height: 27px;">-->
+      <img src="assets/vectors/1.png" class="vector1 one-one" style="z-index:2000;display: ;width: 41px; height: 27px;">
 
     </a>
     
@@ -80,8 +80,9 @@
       Search for Your Dream job
     </div>
 
-    <input type="text" name="" id="" class="search-form wow fadeInUp"
-     placeholder="Search for Your Dream job">
+      <input type="text" name="" id="" class="search-form wow fadeInUp"
+      placeholder="Enter job code!" maxlength="4" style="padding:0px 40px;
+      font-weight:bold;font-size:20px;text-transform: uppercase;text-align:center;">
 
     <div class="dpt-header wow fadeInUp">
     Choose Department
@@ -106,7 +107,7 @@
           $vector=$row['vector'];
           $class=$row['class']; ?>
             <div class="item">
-              <a href="select.php?class=<?php echo $id ?>">
+              <a href="filter.php?class=<?php echo $id ?>">
                 <img src="<?php echo $vector ?>" class="item-img wow fadeInDown" > <br>
                 <div style="text-align:center">
                   <?php echo $class ?>
@@ -154,7 +155,7 @@
             $status=$row['status'];
               ?>
               <div class="blog1">
-                <a href="description.php">
+                <a href="description.php?id=<?php echo $id; ?>">
                   <div style="text-align:center;">
                     <img src="<?php echo $avatar; ?>" class="job-img" > 
                   </div>
@@ -185,7 +186,7 @@
                     Urgently hiring
                     </b>
 
-                    <div>
+                    <div> 
                     <span style="font-size:14px;">
                     <?php 
                       if (strlen($description)>140) {
@@ -266,6 +267,8 @@
       </a>
     </div>
 
+    <div class="mobileSearchRes"></div>
+
   <!-- <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a> -->
 
   <!-- Vendor JS Files -->
@@ -329,6 +332,31 @@ $(document).ready(function() {
 
     });
 });
+
+
+
+$('.search-form').keyup(function(){
+  input = $('.search-form').val();
+  // $('.mobileSearchRes').html(input)
+
+  if (input.length == 4) {
+    $.ajax({
+    url:"controllers/functions/client/ajax.php",
+    method:"POST",
+    async:true,
+    data:{ 
+      "input":input,
+      "search":1,
+    },
+    success:function(data){
+      // alert(input)
+      $('.mobileSearchRes').html(data)
+                        
+    },
+  })
+  }
+});
+
     
 </script>
 
