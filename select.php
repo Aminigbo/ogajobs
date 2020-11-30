@@ -89,7 +89,8 @@
              $skills=$row['skills'];
              $avatar=$row['avatar'];
              $date=$row['date'];
-             $status=$row['status']; 
+             $status=$row['status'];
+             $code = $row['code'];
               ?> 
               <div class="blog1">
                 <a href="description.php?id=<?php echo $id; ?>">
@@ -97,6 +98,9 @@
                     <img src="<?php echo $avatar; ?>" class="job-img" > 
                   </div>
                   <div class="blur">
+                  <b style="color:#00B894;font-size:20px;position:absolute;top:0px;right:5px;">
+                    <?php echo $code ?>
+                  </b>
                     <div style="padding:10px;font-size:15px;">
 
                     <img src="assets/vectors/1.png" class="" style="width:10%"><br>

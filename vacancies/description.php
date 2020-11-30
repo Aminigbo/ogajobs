@@ -113,46 +113,27 @@
 
             <div>
             <span style="font-size:14px;">
-            <?php echo $description ;
+            <?php echo $description ?>
 
-            if (!empty($expirence)) { ?>
             <br><br><br>
             <b>EXPERIENCE</b>
-            <br> <?php echo $expirence ;
-
-            }
-
-            if (!empty($language)) { ?>
+            <br> <?php echo $expirence ?>
             
             <br><br><br> <b> LANGUAGE SKILL</b> <br>
 
-            <?php echo $language;
+            <?php echo $language ?>
 
-            }
-
-            if (!empty($skills)) { ?>
            <br><br><br> 
            <b>TECHNICALS</b>
 
-           <br>
-           <?php echo $skills ;
-
-            }
-
+           <br><?php echo $skills ?>
            
-           if (!empty($age)) { ?>
-            
-            <br><br><br>
+           <br><br><br>
            
             <b>AGE RANGE:</b> 
 
             <br>
             <?php echo $age ?> Years </span>
-
-           <?php }
-           ?>
-           
-           
             </div>
             <b class="apply-pop bottom" style="font-size:19px;float:right;background-color:#00B894;color:white;
                 padding:3px 8px;border-radius:5px;cursor:pointer">
