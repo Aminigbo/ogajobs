@@ -58,13 +58,14 @@
       <a class="join-us wow fadeInUp" style="z-index: 4200;cursor:pointer">Get Started</a>
     </div>
 
-    <div class="dream-jobs wow fadeInLeft">Dream <span class="color">Jobs</span>. Top <span class="color">Talent</span>. 
-    All in <span class="color">One</span> <span class="color">Place</span>.</div>
+    <div class="dream-jobs wow fadeInLeft">Real <span class="color">Jobs</span>. Top <span class="color">Recruiters</span>. 
+    All at <span class="color">your</span> <span class="color">finger tips</span>.</div>
     
 
     <div class="preamble wow fadeInUp">
-    Ready to post a job? Get started with Indeed, where you can post an open role in
-     minutes. Jobs you pay to post on Indeed will also appear on Glassdoor.
+    Welcome! <br>
+    You can get your dream job here
+    You are just a click away from landing that dream job
     </div>
 
     <div class="vector2-holder">
@@ -72,9 +73,9 @@
     </div>
 
     <div class="two_btnss">
-      <a href="select.php" class="next_job wow fadeInUp">Find Your Next Job</a>
+      <a href="select.php" class="next_job wow fadeInUp">Apply for Jobs </a>
 
-      <a class="hire_talent wow fadeInUp" onclick="alert('Coming soon')" style="color:white;cursor:pointer;">Hire Talent</a>
+      <a class="hire_talent wow fadeInUp" onclick="alert('Coming soon')" style="color:white;cursor:pointer;">Employ Someone</a>
     </div>
     
     
@@ -89,11 +90,11 @@
       font-weight:bold;font-size:20px;text-transform: uppercase;text-align:center;">
 
     <div class="dpt-header wow fadeInUp">
-    Choose Department
+    Choose Your Field 
     </div>
     
     <h class="dpt-header-title wow fadeInUp">
-    Just slide through, we’ve got you covered
+      Select your field, your dream job is waiting
     </h>
 
 
@@ -248,22 +249,15 @@
       
       <br><br>
       <p class="wow fadeInDown footer-writeup-desk">
-        Finding highly skilled employees can be time consuming and costly. And trying to find 
-        a new job can be a frustrating experience. Find out how we can help you with your hiring 
-        and job search needs.Finding highly skilled employees can be time consuming and costly.
-        And trying to find a new job can be a frustrating experience. Find out how we can help
-        you with your hiring and job search needs.Finding highly skilled employees can be time
-        consuming and costly. And trying to find a new job can be a frustrating experience. 
-        Find out how we can help you with your hiring and job search needs.Finding highly
-        skilled employees can be time consuming and costly. And trying to find a new job can
-        be a frustrating experience. Find out how we can help you with your hiring and job
-        search needs.
+      We are your one stop-platform for latest job-listing. We specialize in compiling and listing local job openings across Nigeria. We make your job search experience fruitful and less stressful
+      In addition to job listing we provide you with additional resources such as career coaching, resume tailoring and helpful tips in our blog posts. 
+      We are remodeling our country’s hiring system.
       </p>
 
       <p class="wow fadeInDown footer-writeup-mobile" style="font-weight:none;font-size:15px;">
-        Finding highly skilled employees can be time 
-        consuming and costly. And trying to find 
-        a new job can be a frustrating experience.
+      We are your one stop-platform for latest job-listing. We specialize in compiling and listing local job openings across Nigeria. We make your job search experience fruitful and less stressful
+      In addition to job listing we provide you with additional resources such as career coaching, resume tailoring and helpful tips in our blog posts. 
+      We are remodeling our country’s hiring system.
         <br><br>
         
       </p>

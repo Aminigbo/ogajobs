@@ -204,22 +204,15 @@
       
       <br><br>
       <p class="wow fadeInDown footer-writeup-desk">
-        Finding highly skilled employees can be time consuming and costly. And trying to find 
-        a new job can be a frustrating experience. Find out how we can help you with your hiring 
-        and job search needs.Finding highly skilled employees can be time consuming and costly.
-        And trying to find a new job can be a frustrating experience. Find out how we can help
-        you with your hiring and job search needs.Finding highly skilled employees can be time
-        consuming and costly. And trying to find a new job can be a frustrating experience. 
-        Find out how we can help you with your hiring and job search needs.Finding highly
-        skilled employees can be time consuming and costly. And trying to find a new job can
-        be a frustrating experience. Find out how we can help you with your hiring and job
-        search needs.
+      We are your one stop-platform for latest job-listing. We specialize in compiling and listing local job openings across Nigeria. We make your job search experience fruitful and less stressful
+      In addition to job listing we provide you with additional resources such as career coaching, resume tailoring and helpful tips in our blog posts. 
+      We are remodeling our country’s hiring system.
       </p>
 
       <p class="wow fadeInDown footer-writeup-mobile" style="font-weight:none;font-size:15px;margin-bottom:10px;">
-        Finding highly skilled employees can be time 
-        consuming and costly. And trying to find 
-        a new job can be a frustrating experience.
+      We are your one stop-platform for latest job-listing. We specialize in compiling and listing local job openings across Nigeria. We make your job search experience fruitful and less stressful
+      In addition to job listing we provide you with additional resources such as career coaching, resume tailoring and helpful tips in our blog posts. 
+      We are remodeling our country’s hiring system.
         <br><br>
       </p>
     </div>

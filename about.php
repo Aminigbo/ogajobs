@@ -28,6 +28,18 @@
 
 
  <style type="text/css">
+
+ /*  LARGE screen */
+ @media only screen and (min-width: 690px) {
+        .job-holder{
+            width:60%;
+            margin-left:20%;
+        } 
+    }
+
+    /* SMALL SCREEN */
+    @media only screen and (max-width: 690px) { 
+    }
 </style>
 
 
@@ -58,27 +70,8 @@
 
 <br>
     <div class="job-holder">
+        
 
-        <?php
-        // $get =  mysqli_real_escape_string($conn, $_GET['id']) ;
-        $sql = "SELECT * FROM jobs WHERE `status` = '1' AND id = '2' "; 
-        $result = mysqli_query($conn, $sql); 
-        if (mysqli_num_rows($result)) {
-          while ($row=mysqli_fetch_assoc($result)) {
-            $id=$row['id'];
-            $firm=$row['firm'];
-            $location=$row['location'];
-            $position=$row['position'];
-            $salary=$row['salary'];
-            $description=$row['description'];
-            $language=$row['language'];
-            $expirence=$row['expirence'];
-            $age=$row['age'];
-            $skills=$row['skills'];
-            $avatar=$row['avatar'];
-            $date=$row['date'];
-            $status=$row['status'];
-            ?>
         <div class="jobs"> 
             <div class="t-head">
             <img src="assets/vectors/1.png" class="" style="width:6%"><br>
@@ -96,43 +89,26 @@
             About Us
             </b>
 
-            <div>
+            <div class="we">
             <span style="font-size:14px;">
-            Finding highly skilled employees can be time consuming and costly. And trying to find 
-            a new job can be a frustrating experience. Find out how we can help you with your hiring 
-            and job search needs.Finding highly skilled employees can be time consuming and costly.
-            And trying to find a new job can be a frustrating experience. Find out how we can help
-            you with your hiring and job search needs.Finding highly skilled employees can be time
-            consuming and costly. And trying to find a new job can be a frustrating experience. 
-            Find out how we can help you with your hiring and job search needs.Finding highly
-            skilled employees can be time consuming and costly. And trying to find a new job can
-            be a frustrating experience. Find out how we can help you with your hiring and job
-            search needs.
-            Finding highly skilled employees can be time consuming and costly. And trying to find 
-        a new job can be a frustrating experience. Find out how we can help you with your hiring 
-        and job search needs.Finding highly skilled employees can be time consuming and costly.
-        And trying to find a new job can be a frustrating experience. Find out how we can help
-        you with your hiring and job search needs.Finding highly skilled employees can be time
-        consuming and costly. And trying to find a new job can be a frustrating experience. 
-        Find out how we can help you with your hiring and job search needs.Finding highly
-        skilled employees can be time consuming and costly. And trying to find a new job can
-        be a frustrating experience. Find out how we can help you with your hiring and job
-        search needs.
+            We are your one stop-platform for latest job-listing. We specialize in compiling and listing local job openings across Nigeria. We make your job search experience fruitful and less stressful
+            In addition to job listing we provide you with additional resources such as career coaching, resume tailoring and helpful tips in our blog posts. 
+            We are remodeling our country’s hiring system <br> <br>
+
+            To companies, we bring you the best brains to do the job
+            To job- seekers, we connect you to your dream job. 
+            We’ve got you covered.
             </span>
  
         </div>
-    <?php
-        }
-       }
-        ?>
+        
     </div> 
     
     <div class="by">
       Built with  <i class="fa fa-heart" style="color:red;"></i> by
       <a href="https://hthub.com.ng/" class="by-a">
-       HARVOXX TECH. HUB
-      </a>
-      <div style="color:grey;font-size:13px;">powered by Kedosic Innovation</div>
+       HARVOXX TECH. HUB 
+      <br><br>
     </div> 
 
     
