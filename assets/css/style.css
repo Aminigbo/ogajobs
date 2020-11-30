@@ -202,7 +202,7 @@ large screen
     line-height: 40px;
 
     color: #17282F;
-  }
+  } 
 
   .search-form{
     position: absolute;
@@ -645,6 +645,7 @@ display:none;
     /* font-weight: bold; */
     font-size: 14px;
     line-height: 40px; 
+    z-index: 100;
   }
 
   .search-form-fixed{
@@ -652,8 +653,7 @@ display:none;
     width: 100%; 
     left: 0%;
     top: 50px; 
-    border-radius:0px;
-    z-index: 2000;
+    border-radius:0px; 
   }
 
   .dpt-header{
@@ -862,5 +862,32 @@ display:none;
 
   .one-one{
     display: none;
+  }
+
+
+  .mobile-menu{
+    position: fixed;
+    height: 40%;
+    width: 100%;
+    left: 0px;
+    top: 8%;
+    background-color: #005B49;
+    z-index: 200 ;
+    /* display: none; */
+    padding: 40px 30px;
+  }
+
+  .times{
+    position: absolute;
+    /* width: 75px;
+    height: 21px; */
+  right: 6%;
+  top: 17px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #17282F;
   }
 }

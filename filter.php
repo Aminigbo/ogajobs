@@ -37,7 +37,7 @@
 
 
   <section id="section1" class="section1 header">
-    
+  <?php include 'controllers/includes/menu.php'; ?>
   <div class="heada">
     <a href="./" >
       <img src="assets/vectors/1.png" class="vector1 wow fadeInDown one" style="z-index:2000;">

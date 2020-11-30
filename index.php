@@ -37,6 +37,8 @@
 
 
   <section id="section1" class="section1 header">
+
+  <?php include 'controllers/includes/menu.php'; ?>
     
   <div class="heada">
     <a href="./" >
@@ -130,7 +132,7 @@
     </div>
 
     <div class="more wow fadeInUp">
-        See Available Jobs
+      Available Jobs
     </div>
 
     <div class="jobHolders">
@@ -217,10 +219,7 @@
         }
     
       ?>
-    </div>
-    <!-- <img src="assets/vectors/sale.png" class="blog2" alt="">
-    <img src="assets/vectors/sale.png" class="blog3" alt="">
-    <img src="assets/vectors/sale.png" class="blog4" alt=""> -->
+    </div> 
 
     <div class="footer">
     <img src="assets/vectors/footer.png" class="footer-vector wow fadeInDown">
@@ -333,6 +332,16 @@ $(document).ready(function() {
     });
 });
 
+
+$(".close-bar").click(function(){
+  $(".close-bar").hide()
+  $(".mobile-menu").slideUp();
+})
+
+$(".menu").click(function(){
+  $(".close-bar").show()
+  $(".mobile-menu").slideDown();
+})
 
 
 $('.search-form').keyup(function(){
