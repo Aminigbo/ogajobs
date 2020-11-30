@@ -64,15 +64,16 @@ if (isset($_POST['add'])) {
     $fileSize =$_FILES['avatar']['size'];
     $fileError =$_FILES['avatar']['error'];
     $fileType =$_FILES['avatar']['type'];
-    $surv_team_2_dp = "job-avatars/".$surv_team_2_dp;
-    $img_success=move_uploaded_file($filetmpname4, $surv_team_2_dp);
+    $Move = "../../../job-avatars/".$surv_team_2_dp;
+    $save_img = "job-avatars/".$surv_team_2_dp;
+    $img_success=move_uploaded_file($filetmpname4, $Move);
     $date = date("Y-m-d");
     if (empty($firm) || empty($location)|| empty($position)|| empty($skills)|| empty($salary)
     || empty($desc)|| empty($responsibility)|| empty($language)|| empty($expirence)|| empty($age)) {
         header("location:../../../admin.php?callback=empty-field");
     }else{
-        $query = "INSERT INTO jobs (class,firm, `location`, position, salary,`description`,responsibility,`language`,expirence,age,skills,avatar,`date`,`status`,code) 
-      VALUES('$class','$firm','$location', '$position', '$salary', '$desc', '$responsibility', '$language','$expirence', '$age', '$skills', '$surv_team_2_dp','$date','0','$code')";
+        $query = "INSERT INTO jobs (category,firm, `location`, position, salary,`description`,responsibility,`language`,expirence,age,skills,avatar,`date`,`status`,code) 
+      VALUES('$class','$firm','$location', '$position', '$salary', '$desc', '$responsibility', '$language','$expirence', '$age', '$skills', '$save_img','$date','0','$code')";
       $success= mysqli_query($conn, $query);
       header("location:../../../admin.php?callback=success");
     }

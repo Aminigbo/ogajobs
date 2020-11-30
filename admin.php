@@ -75,7 +75,8 @@
             </div>
 
             <div style="text-align:center;">
-                <form action="controllers/functions/admin/script.php" method="POST" enctype='multipart/form-data'>
+                <form action="controllers/functions/admin/script.php" method="POST" enctype='multipart/form-data'
+                style="text-align:left">
                     <select type="text" name="class" id="" placeholder="Enter Firm">
                         <?php 
                         

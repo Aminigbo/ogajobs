@@ -133,7 +133,7 @@
             <b>AGE RANGE:</b> 
 
             <br>
-            <?php echo $age ?> </span>
+            <?php echo $age ?> Years </span>
             </div>
             <b class="apply-pop" style="font-size:19px;float:right;background-color:#00B894;color:white;
                 padding:3px 8px;border-radius:5px;cursor:pointer">
@@ -203,10 +203,10 @@
           <form method="POST"  action="controllers/functions/client/script.php"
            onsubmit="return formOK;" enctype='multipart/form-data'>
 
-            <input type="text" required name="" id="" placeholder="Your fullname"> <br><br>
-            <input type="text" required name="" id="" placeholder="Your phone number"> <br><br>
-            <input type="text" required name="" id="" placeholder="Your email address"> <br><br>
-            <select name="" id="">
+            <input type="text" required name="fullname" id="" placeholder="Your fullname"> <br><br>
+            <input type="text" required name="phone" id="" placeholder="Your phone number"> <br><br>
+            <input type="text" required name="email" id="" placeholder="Your email address"> <br><br>
+            <select name="sex" id="">
               <option> -- SELECT GENDER --</option>
               <option>MALE</option>
               <option>FEMALE</option>
@@ -214,10 +214,10 @@
 
             <label class="lab" style="padding:45px 20px;text-align:center;background-color:#eee;cursor:pointer;">
               Upload your vc
-              <input type="file" style="display:none;" class="cv" name="MyFile" onchange="validatePDF(this)">
+              <input type="file" style="display:none;" class="cv" name="cv" onchange="validatePDF(this)">
             </label> <br><br>
 
-            <input type="submit" name="" id="" class="apply" value="APPLY"
+            <input type="submit" name="apply" id="" class="apply" value="APPLY"
             style="background-color:#005B49;border:none;color:white;font-weight:bold;
             font-size:20px;display:none;"
             >
