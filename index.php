@@ -49,11 +49,11 @@
     
     <img src="assets/vectors/bar2.png" class="menu header-btns bar" style="z-index:2000;">
       <a href="" class="about wow fadeInUp header-btns" style="z-index: 4200;">About Us</a>
-      <a href="" class="find wow fadeInUp header-btns" style="z-index: 4200;">Find Job</a>
+      <a  class="find wow fadeInUp header-btns" style="z-index: 4200;cursor:pointer">Find Job</a>
       <a href="" class="blog wow fadeInUp header-btns" style="z-index: 4200;">Blog</a>
 
       <a href="" class="post-job wow fadeInUp" style="z-index: 4200;">Post a Job</a>
-      <a href="" class="join-us wow fadeInUp" style="z-index: 4200;">Join Us</a>
+      <a class="join-us wow fadeInUp" style="z-index: 4200;cursor:pointer">Get Started</a>
     </div>
 
     <div class="dream-jobs wow fadeInLeft">Dream <span class="color">Jobs</span>. Top <span class="color">Talent</span>. 
@@ -70,9 +70,9 @@
     </div>
 
     <div class="two_btnss">
-      <a href="" class="next_job wow fadeInUp">Find Your Next Job</a>
+      <a href="select.php" class="next_job wow fadeInUp">Find Your Next Job</a>
 
-      <a href="" class="hire_talent wow fadeInUp">Hire Talent</a>
+      <a class="hire_talent wow fadeInUp">Hire Talent</a>
     </div>
     
     
@@ -366,7 +366,19 @@ $('.search-form').keyup(function(){
   }
 });
 
-    
+
+$( ".find" ) .click(function() {
+  $('html,body').animate({
+  scrollTop: $(".jobHolders").offset().top},
+  2000);
+})
+
+$( ".join-us" ) .click(function() {
+  $('html,body').animate({
+  scrollTop: $(".dpt-header").offset().top},
+  2000);
+})
+
 </script>
 
 <!-- <script src="//code.tidio.co/4hx5f11qnh54qrylyuwlvjupscrxgh2u.js" async></script> -->

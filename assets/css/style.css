@@ -645,7 +645,7 @@ display:none;
     /* font-weight: bold; */
     font-size: 14px;
     line-height: 40px; 
-    z-index: 100;
+    z-index: 199;
   }
 
   .search-form-fixed{

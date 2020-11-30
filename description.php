@@ -304,19 +304,12 @@ $(document).ready(function() {
     $(window).scroll(function() {
         var windowpos = $(window).scrollTop();
 
-        if (windowpos > 900) {
+        if (windowpos > 200) {
           $(".heada").addClass("head"); 
           
         } else if(windowpos < 1) {
           $(".heada").removeClass("head"); 
-        }
-
-        if (windowpos > 605) {
-          $(".search-form").addClass("search-form-fixed"); 
-          
-        } else if(windowpos < 200) {
-          $(".search-form").removeClass("search-form-fixed"); 
-        }
+        } 
 
     });
 });

@@ -1,15 +1,15 @@
 <?php
 
 session_start(); 
-/*
-$dbservername = 'localhost';
- 
- $dbusername = 'u0818697_tik8ng';
- 
- $dbpassword = 'thisistik8ng';
- 
- $dbname = 'u0818697_Tik8'; 
-*/ 
+
+// $dbservername = 'localhost';
+
+// $dbpassword = 'Emmanueld45@';
+                
+// $dbusername = 'hthubcom_hthub';
+                
+// $dbname = 'hthubcom_hthub';
+
 
 $dbservername = 'localhost';
  

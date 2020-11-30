@@ -48,13 +48,13 @@ large screen
       Close
     </span>
 
-    <a href="" style="margin:10px;color:white;"><b> About Us </b> </a>
-    <a href="" style="margin:10px;color:white;"><b> Find Jobs </b> </a>
-    <a href="" style="margin:10px;color:white;"><b> Hire Talents </b> </a> <br><br>
-    <a href="" style="margin:10px;color:white;"><b> Blog </b> </a>
-    <a href="" style="margin:10px;color:white;"><b> Report </b> </a>
-    <a href="" style="margin:10px;color:white;"><b> Terms </b> </a>
-    <a href="" style="margin:10px;color:white;"><b> Post Job </b> </a>
+    <a href="" style="margin:10px;color:white;"><b> About Us </b> </a><br>
+    <a href="" style="margin:10px;color:white;"><b> Find Jobs </b> </a><br>
+    <!-- <a href="" style="margin:10px;color:white;"><b> Hire </b> </a> <br> -->
+    <a href="" style="margin:10px;color:white;"><b> Blog </b> </a><br>
+    <a href="" style="margin:10px;color:white;"><b> Report </b> </a><br>
+    <a href="" style="margin:10px;color:white;"><b> Terms </b> </a><br>
+    <!-- <a href="" style="margin:10px;color:white;"><b> Create </b> </a><br> -->
   </div>
 
   
