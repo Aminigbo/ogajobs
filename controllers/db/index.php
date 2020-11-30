@@ -2,21 +2,21 @@
 
 session_start(); 
 
-$dbservername = 'localhost';
-
-$dbpassword = 'Emmanueld45@';
-                
-$dbusername = 'hthubcom_hthub';
-                
-$dbname = 'hthubcom_hthub';
-
-
 // $dbservername = 'localhost';
+
+// $dbpassword = 'Emmanueld45@';
+                
+// $dbusername = 'hthubcom_hthub';
+                
+// $dbname = 'hthubcom_hthub';
+
+
+$dbservername = 'localhost';
  
-// $dbusername = 'root';
+$dbusername = 'root';
  
-// $dbpassword = '';
+$dbpassword = '';
  
-// $dbname = 'jobpadi';
+$dbname = 'jobpadi';
 
 $conn = mysqli_connect($dbservername, $dbusername, $dbpassword, $dbname);
