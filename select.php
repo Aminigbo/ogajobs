@@ -46,7 +46,7 @@
     </a>
     <img src="assets/vectors/bar2.png" class="menu" style="z-index:2000;">
       <a href="" class="about wow fadeInUp header-btns" style="z-index: 4200;">About Us</a>
-      <a href="" class="find wow fadeInUp header-btns" style="z-index: 4200;">Post Job</a>
+      <a href="" class="find wow fadeInUp header-btns" style="z-index: 4200;">Applications</a>
       <a href="" class="blog wow fadeInUp header-btns" style="z-index: 4200;">Blog</a>
 
       <b class="filter wow fadeInUp header-btns" style="z-index: 4200;">Filter</b>

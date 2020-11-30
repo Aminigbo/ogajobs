@@ -52,7 +52,7 @@
       <a  class="find wow fadeInUp header-btns" style="z-index: 4200;cursor:pointer">Find Job</a>
       <a href="" class="blog wow fadeInUp header-btns" style="z-index: 4200;">Blog</a>
 
-      <a href="" class="post-job wow fadeInUp" style="z-index: 4200;">Post a Job</a>
+      <a href="" class="post-job wow fadeInUp" style="z-index: 4200;">Applications</a>
       <a class="join-us wow fadeInUp" style="z-index: 4200;cursor:pointer">Get Started</a>
     </div>
 
@@ -72,7 +72,7 @@
     <div class="two_btnss">
       <a href="select.php" class="next_job wow fadeInUp">Find Your Next Job</a>
 
-      <a class="hire_talent wow fadeInUp">Hire Talent</a>
+      <a href="" class="hire_talent wow fadeInUp">Hire Talent</a>
     </div>
     
     

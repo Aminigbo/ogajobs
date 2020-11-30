@@ -49,7 +49,7 @@ large screen
     </span>
 
     <a href="" style="margin:10px;color:white;"><b> About Us </b> </a><br>
-    <a href="" style="margin:10px;color:white;"><b> Find Jobs </b> </a><br>
+    <a href="select.php" style="margin:10px;color:white;"><b> Find Jobs </b> </a><br>
     <!-- <a href="" style="margin:10px;color:white;"><b> Hire </b> </a> <br> -->
     <a href="" style="margin:10px;color:white;"><b> Blog </b> </a><br>
     <a href="" style="margin:10px;color:white;"><b> Report </b> </a><br>

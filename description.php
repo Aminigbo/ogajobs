@@ -46,7 +46,7 @@
     </a>
     <img src="assets/vectors/bar2.png" class="menu" style="z-index:2000;">
       <a href="" class="about wow fadeInUp header-btns" style="z-index: 4200;">About Us</a>
-      <a href="" class="find wow fadeInUp header-btns" style="z-index: 4200;">Post Job</a>
+      <a href="" class="find wow fadeInUp header-btns" style="z-index: 4200;">Applications</a>
       <a href="" class="blog wow fadeInUp header-btns" style="z-index: 4200;">Blog</a>
 
       <b class="filter wow fadeInUp header-btns" style="z-index: 4200;">Filter</b>
@@ -135,7 +135,7 @@
             <br>
             <?php echo $age ?> Years </span>
             </div>
-            <b class="apply-pop" style="font-size:19px;float:right;background-color:#00B894;color:white;
+            <b class="apply-pop bottom" style="font-size:19px;float:right;background-color:#00B894;color:white;
                 padding:3px 8px;border-radius:5px;cursor:pointer">
                 APPLY
             </b> 
@@ -338,18 +338,18 @@ $(".close-bar").click(function(){
     $(".menu").click(function(){
     $(".close-bar").show()
     $(".mobile-menu").slideDown();
-    })
-
-
-    $( ".filter" ) .click(function() {
-        $('html,body').animate({
-        scrollTop: $(".two_btnss").offset().top},
-        2000);
-    })
+    }) 
 
 $( ".search" ) .click(function() {
     $( ".search-form" ).focus();
   })
+
+
+  $( ".filter" ) .click(function() {
+  $('html,body').animate({
+  scrollTop: $(".bottom").offset().top},
+  2000);
+})
     
 </script>
 
