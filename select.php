@@ -45,9 +45,9 @@
 
     </a>
     <img src="assets/vectors/bar2.png" class="menu" style="z-index:2000;">
-      <a href="" class="about wow fadeInUp header-btns" style="z-index: 4200;">About Us</a>
-      <a href="" class="find wow fadeInUp header-btns" style="z-index: 4200;">Applications</a>
-      <a href="" class="blog wow fadeInUp header-btns" style="z-index: 4200;">Blog</a>
+      <a href="about.php" class="about wow fadeInUp header-btns" style="z-index: 4200;">About Us</a>
+      <a onclick="alert('Coming soon')" class="find wow fadeInUp header-btns" style="z-index: 4200;cursor:pointer">Applications</a>
+      <a href="contact.php" class="blog wow fadeInUp header-btns" style="z-index: 4200;">Contact</a>
 
       <b class="filter wow fadeInUp header-btns" style="z-index: 4200;">Filter</b>
       
@@ -225,6 +225,7 @@
       <a href="https://hthub.com.ng/" class="by-a">
        HARVOXX TECH. HUB
       </a>
+      <div style="color:grey;font-size:13px;">powered by Kedosic Innovation</div>
     </div>
 
     

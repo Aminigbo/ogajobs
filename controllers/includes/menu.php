@@ -6,7 +6,7 @@ small screen
 @media only screen and (max-width: 690px) {
     .mobile-menu{
     position: fixed;
-    height: 40%;
+    height: 41%;
     width: 100%;
     left: 0px;
     top: 8%;
@@ -48,12 +48,12 @@ large screen
       Close
     </span>
 
-    <a href="" style="margin:10px;color:white;"><b> About Us </b> </a><br>
-    <a href="select.php" style="margin:10px;color:white;"><b> Find Jobs </b> </a><br>
+    <a href="about.php" style="margin:10px;color:white;"><b> About Us </b> </a><br><br>
+    <a href="select.php" style="margin:10px;color:white;"><b> Find Jobs </b> </a><br><br>
     <!-- <a href="" style="margin:10px;color:white;"><b> Hire </b> </a> <br> -->
-    <a href="" style="margin:10px;color:white;"><b> Blog </b> </a><br>
-    <a href="" style="margin:10px;color:white;"><b> Report </b> </a><br>
-    <a href="" style="margin:10px;color:white;"><b> Terms </b> </a><br>
+    <!-- <a href="" style="margin:10px;color:white;"><b> Blog </b> </a><br> -->
+    <a href="contact.php" style="margin:10px;color:white;"><b> Contact Us </b> </a><br><br>
+    <!-- <a href="" style="margin:10px;color:white;"><b> Terms </b> </a><br><br> -->
     <!-- <a href="" style="margin:10px;color:white;"><b> Create </b> </a><br> -->
   </div>
 

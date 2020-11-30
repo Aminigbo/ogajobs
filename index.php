@@ -48,11 +48,13 @@
     </a>
     
     <img src="assets/vectors/bar2.png" class="menu header-btns bar" style="z-index:2000;">
-      <a href="" class="about wow fadeInUp header-btns" style="z-index: 4200;">About Us</a>
+      <a href="about.php" class="about wow fadeInUp header-btns" style="z-index: 4200;">About Us</a>
       <a  class="find wow fadeInUp header-btns" style="z-index: 4200;cursor:pointer">Find Job</a>
-      <a href="" class="blog wow fadeInUp header-btns" style="z-index: 4200;">Blog</a>
+      <!-- <a href="" class="blog wow fadeInUp header-btns" style="z-index: 4200;">Blog</a> -->
+      <a href="contact.php" class="blog wow fadeInUp header-btns" style="z-index: 4200;">Contact</a>
 
-      <a href="" class="post-job wow fadeInUp" style="z-index: 4200;">Applications</a>
+
+      <a class="post-job wow fadeInUp" style="z-index: 4200;cursor:pointer;" onclick="alert('Coming soon')">Applications</a>
       <a class="join-us wow fadeInUp" style="z-index: 4200;cursor:pointer">Get Started</a>
     </div>
 
@@ -72,7 +74,7 @@
     <div class="two_btnss">
       <a href="select.php" class="next_job wow fadeInUp">Find Your Next Job</a>
 
-      <a href="" class="hire_talent wow fadeInUp">Hire Talent</a>
+      <a class="hire_talent wow fadeInUp" onclick="alert('Coming soon')" style="color:white;cursor:pointer;">Hire Talent</a>
     </div>
     
     
@@ -263,7 +265,8 @@
       Built with  <i class="fa fa-heart" style="color:red;"></i> by
       <a href="https://hthub.com.ng/" class="by-a">
        HARVOXX TECH. HUB
-      </a>
+      </a> 
+      <div style="color:grey;font-size:13px;">powered by Kedosic Innovation</div>
     </div>
 
     <div class="mobileSearchRes"></div>
