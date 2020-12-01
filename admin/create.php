@@ -1,4 +1,4 @@
-<?php include 'controllers/db/index.php'; ?>
+<?php include '../controllers/db/index.php'; ?>
 <!DOCTYPE html>
 <html lang="en"> 
 
@@ -12,18 +12,18 @@
   <meta content="" name="description">
 
  <!-- Favicons -->
- <link href="assets/vectors/1.png" rel="icon">
- <link href="assets/vectors/1.png" rel="apple-touch-icon">
+ <link href="../assets/vectors/1.png" rel="icon">
+ <link href="../assets/vectors/1.png" rel="apple-touch-icon">
  
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet"> 
-  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet"> 
+  <link href="../assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/admin.css" rel="stylesheet">
+  <link href="../assets/css/create.css" rel="stylesheet">
 
 
 
@@ -40,26 +40,20 @@
     
   <div class="heada">
     <a href="./" >
-      <img src="assets/vectors/1.png" class="vector1 wow fadeInDown one" style="z-index:2000;">
+      <img src="../assets/vectors/1.png" class="vector1 wow fadeInDown one" style="z-index:2000;">
  
     </a>
-       <a href="" class="about wow fadeInUp header-btns" style="z-index: 4200;">About Us</a>
-      <a href="" class="find wow fadeInUp header-btns" style="z-index: 4200;">Post Job</a>
-      <a href="" class="blog wow fadeInUp header-btns" style="z-index: 4200;">Blog</a>
-
-      <b class="filter wow fadeInUp header-btns" style="z-index: 4200;">Filter</b>
-      
-      <img src="assets/vectors/search.png" class="search wow fadeInUp header-btns" style="z-index:2000;display:inline-block"> 
+    <a href="./" class="about wow fadeInUp header-btns" style="z-index: 4200;">Home</a>
+      <a href="" class="find wow fadeInUp header-btns" style="z-index: 4200;cursor:pointer">Messages</a>
+      <a href="all-jobs.php" class="blog wow fadeInUp header-btns" style="z-index: 4200;">Jobs</a>
+      <!-- <a href="create.php" class="filter wow fadeInUp header-btns" style="z-index: 4200;">Create</a>  -->
        
 
 </div> 
-    <div class="job-holder">
-
-        <?php for ($i=0; $i < 1; $i++) { 
-            ?>
+    <div class="job-holder"> 
         <div class="jobs"> 
             <div class="t-head">
-            <img src="assets/vectors/1.png" class="" style="width:10%"><br>
+            <img src="../assets/vectors/1.png" class="" style="width:10%"><br>
 
                 <b class="j-title">
                     SoftWare Engineering
@@ -72,10 +66,10 @@
                 Port harcout
                 </span> <br><br><br>
                 <br>
-            </div>
+            </div> 
 
             <div style="text-align:center;">
-                <form action="controllers/functions/admin/script.php" method="POST" enctype='multipart/form-data'
+                <form action="../controllers/functions/admin/script.php" method="POST" enctype='multipart/form-data'
                 style="text-align:left">
                     <select type="text" name="class" id="" placeholder="Enter Firm">
                         <?php 
@@ -97,9 +91,9 @@
                     <input type="text" name="position" id="" placeholder="Enter Position">
                     <input type="text" name="salary" id="" placeholder="Enter salary / month">
 
-                    <textarea style="padding:10px;" name="desc" id="" cols="100" rows="5" placeholder="Enter job description"></textarea> <br>
+                    <textarea style="padding:10px;height:170px;" name="desc" id="" placeholder="Enter job description"></textarea> <br>
                     <br>
-                    <textarea style="padding:10px;" name="responsibility" id="" cols="100" rows="5" placeholder="Enter employee responsibility"></textarea> <br>
+                    <textarea style="padding:10px;height:170px;" name="responsibility" id=""  rows="5" placeholder="Enter employee responsibility"></textarea> <br>
 
                     <input type="text" name="skills" id="" placeholder="Required skills">
                     <input type="text" name="language" id=""  placeholder="Language skills">
@@ -146,8 +140,7 @@
 
             </div>
         </div>
-    <?php
-        } ?>
+                    
     </div> 
 
     
@@ -160,11 +153,11 @@
   <!-- <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a> -->
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script> 
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
-  <script src="assets/vendor/wow/wow.min.js"></script> 
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/superfish/superfish.min.js"></script> 
+  <script src="../assets/vendor/jquery/jquery.min.js"></script> 
+  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+  <script src="../assets/vendor/wow/wow.min.js"></script> 
+  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/superfish/superfish.min.js"></script> 
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
