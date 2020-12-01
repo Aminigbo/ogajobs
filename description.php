@@ -226,7 +226,7 @@
             </select> <br><br>
 
             <label class="lab" style="padding:45px 20px;text-align:center;background-color:#eee;cursor:pointer;">
-              Upload your vc
+              Upload your cv
               <input type="file" style="display:none;" class="cv" name="cv" onchange="validatePDF(this)">
             </label> <br><br>
 

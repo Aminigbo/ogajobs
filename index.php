@@ -179,7 +179,7 @@
                     <img src="assets/vectors/1.png" class="" style="width:10%"><br>
                     <br>
                     <b class="j-title">
-                      <?php echo $avatar; ?>
+                      <?php echo $position; ?>
                     </b> <br>
 
                     <span style="font-size:13px;">
