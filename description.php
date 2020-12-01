@@ -216,6 +216,7 @@
           <form method="POST"  action="controllers/functions/client/script.php"
            onsubmit="return formOK;" enctype='multipart/form-data'>
 
+           <input type="text" name="job" value="<?php echo $_GET['id'] ?>">
             <input type="text" required name="fullname" id="" placeholder="Your fullname"> <br><br>
             <input type="text" required name="phone" id="" placeholder="Your phone number"> <br><br>
             <input type="text" required name="email" id="" placeholder="Your email address"> <br><br>

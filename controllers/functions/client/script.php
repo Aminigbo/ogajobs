@@ -6,6 +6,7 @@ if (isset($_POST['apply'])) {
     $phone  = mysqli_real_escape_string($conn, $_POST['phone']) ;
     $email  = mysqli_real_escape_string($conn, $_POST['email']) ;
     $sex  = mysqli_real_escape_string($conn, $_POST['sex']) ;
+    $job  = mysqli_real_escape_string($conn, $_POST['job']) ;
 
     $surv_team_2_dp  = $_FILES['cv']['name'];
     $filetmpname4 = $_FILES['cv']['tmp_name'];
@@ -17,8 +18,8 @@ if (isset($_POST['apply'])) {
     $img_success=move_uploaded_file($filetmpname4, $Move);
 
     $date = date("Y-m-d"); 
-    $query = "INSERT INTO applications (user,phone, `email`, sex, cv,`date`,`status`) 
-    VALUES('$name','$phone','$email', '$sex', '$save_cv', '$date', 'submitted')";
+    $query = "INSERT INTO applications (user,phone, `email`, sex, cv,`date`,`status`,job) 
+    VALUES('$name','$phone','$email', '$sex', '$save_cv', '$date', 'submitted','$job')";
     $success= mysqli_query($conn, $query);
     ?>
 
