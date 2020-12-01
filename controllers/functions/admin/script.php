@@ -66,7 +66,7 @@ if (isset($_POST['add'])) {
     $fileType =$_FILES['avatar']['type'];
     $Move = "../../../job-avatars/".$surv_team_2_dp;
     $save_img = "job-avatars/".$surv_team_2_dp;
-    $img_success=move_uploaded_file($filetmpname4, $Move);
+    $img_success=move_uploaded_file($filetmpname4, $Move); 
     $date = date("Y-m-d");
     if (empty($firm) || empty($location)|| empty($position)|| empty($skills)|| empty($salary)
     || empty($desc)|| empty($responsibility)|| empty($language)|| empty($expirence)|| empty($age)) {
@@ -78,3 +78,5 @@ if (isset($_POST['add'])) {
       header("location:../../../admin.php?callback=success");
     }
 }
+
+

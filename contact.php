@@ -100,14 +100,42 @@
             <b class="j-title">
                 Contact Us
             </b>
-                <input type="text" name="" placeholder="Your name" id=""> <br><br>
-                <input type="text" name="" placeholder="Your email" id=""> <br><br>
-                <input type="text" name="" placeholder="Your phone" id=""> <br><br> <br>
-                <textarea name="" id="" cols="26" rows="10" placeholder="Enter your  message here"></textarea>
-                <br><br>
-                <input type="submit" value="Message Us" name="" 
-                style="width:120px;background-color:#005B49;color:white;border:none;border-radius:7px;padding:8px;">
+                <form method="POST">
+                    <input type="text" required name="contact_name" placeholder="Your name" id=""> <br><br>
+                    <input type="text" required name="contact_email" placeholder="Your email" id=""> <br><br>
+                    <input type="text" required name="contact_phone" placeholder="Your phone" id=""> <br><br> <br>
+                    <textarea required maxlength="240" name="contact_message" id="" cols="26" rows="10" placeholder="Enter your  message here"></textarea>
+                    <br><br>
+                    <input type="submit" value="Message Us" name="messageUs" 
+                    style="width:120px;background-color:#005B49;color:white;border:none;border-radius:7px;padding:8px;">
+                </form>
             </div>
+
+            <?php 
+                if (isset($_POST['messageUs'])) {
+                    $contact_name  = mysqli_real_escape_string($conn, $_POST['contact_name']) ;
+                    $contact_email  = mysqli_real_escape_string($conn, $_POST['contact_email']) ;
+                    $contact_phone  = mysqli_real_escape_string($conn, $_POST['contact_phone']) ;
+                    $contact_message  = mysqli_real_escape_string($conn, $_POST['contact_message']) ;
+                    $date  = qdate("Y-m-d") ;
+
+                    if (empty($contact_name) || empty($contact_email)|| empty($contact_phone)|| empty($contact_message) ) {
+                        ?>
+
+                        <script>
+                            alert("You missed a field")
+                        </script>
+                        <?php
+                    }else{
+                        $query = "INSERT INTO padicontacts (`name`,phone, `email`, `message`, `date`,`status`) 
+                        VALUES('$contact_name','$contact_email','$contact_phone', '$contact_message', '$date','0')";
+                        $success= mysqli_query($conn, $query);
+
+                    }
+
+                    
+                }
+            ?>
  
         </div> 
     </div> 
