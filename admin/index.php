@@ -1,4 +1,14 @@
-<?php include '../controllers/db/index.php'; ?>
+<?php include '../controllers/db/index.php';
+
+function isLoggedIn() {
+    if (isset($_SESSION['user'])) {
+      return true;
+    }else{
+      return false;
+    }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en"> 
 
@@ -35,6 +45,7 @@
 
 <body>
 
+    
 
   <section id="section1" class="section1 header"> 
   <div class="heada">
@@ -168,48 +179,49 @@
    
 </div>
 
-    <div class="footer">
-    <img src="../assets/vectors/footer.png" class="footer-vector wow fadeInDown">
-
-    <br><br>
-    
-    <div class="who-we-are wow fadeInDown">
-      <b>Who We Are</b> 
-
-      <b class="social">
-      <img src="../assets/vectors/ig.png" class="social-icons wow fadeInDown">
-      <img src="../assets/vectors/fb.png" class="social-icons wow fadeInDown">
-      <img src="../assets/vectors/twitter.png" class="social-icons wow fadeInDown">
-      </b>
-      
-      <br><br>
-      <p class="wow fadeInDown footer-writeup-desk">
-      We are your one stop-platform for latest job-listing. We specialize in compiling and listing local job openings across Nigeria. We make your job search experience fruitful and less stressful
-      In addition to job listing we provide you with additional resources such as career coaching, resume tailoring and helpful tips in our blog posts. 
-      We are remodeling our country’s hiring system.
-      </p>
-
-      <p class="wow fadeInDown footer-writeup-mobile" style="font-weight:none;font-size:15px;margin-bottom:10px;">
-      We are your one stop-platform for latest job-listing. We specialize in compiling and listing local job openings across Nigeria. We make your job search experience fruitful and less stressful
-      In addition to job listing we provide you with additional resources such as career coaching, resume tailoring and helpful tips in our blog posts. 
-      We are remodeling our country’s hiring system.
-        <br><br>
-      </p>
-    </div>
-    </div>
-    <div class="by">
-      Built with  <i class="fa fa-heart" style="color:red;"></i> by
-      <a href="https://hthub.com.ng/" class="by-a">
-       HARVOXX TECH. HUB
-      </a>
-      <div style="color:grey;font-size:13px;">powered by Kedosic Innovation</div>
-    </div>
 
     
     
   </section>
-  
+
+  <?php
+  if (!isLoggedIn()) {
+    // header("location:../");
+    ?>
+        <div class="auth" style="position:fixed;top:0px;left:0px;background-color:rgb(0,0,0,1);
+        height:100%;width:100%;z-index:10000;display: ;">
+
+        <form method="POST" style="width:50%;margin-left:25%;margin-top:15%;text-align:center;">
+            <input class="access" type="text" name="accessPin" style="padding:10px;width:50%;border-radius:10px;
+            border:none;font-weight:bold;font-size:43px;" placeholder="Access Token">
+            <input type="submit" name="access" style="display:none">
+        </form>
+        <?php 
+        
+        if (isset($_POST['access'])) {  
+            $accessPin = mysqli_real_escape_string($conn, $_POST['accessPin']) ; 
+                
+            $query = "SELECT * FROM padiadmin WHERE access='$accessPin' ";
+            $results = mysqli_query($conn, $query);
+                
+            if (mysqli_num_rows($results)) { // user found
+                $logged_in_user = mysqli_fetch_assoc($results);
+                $_SESSION['access'] = $logged_in_user; 
+            }
+        }
+        
+        ?>
+        </div>
+        
+
+    <?php 
     
+    
+  }
+    
+    ?>
+  
+  
   
 
   <!-- <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a> -->
