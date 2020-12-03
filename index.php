@@ -150,15 +150,16 @@
             $location=$row['location'];
             $position=$row['position'];
             $salary=$row['salary'];
-            $description=$row['description'];
-            $language=$row['language'];
-            $expirence=$row['expirence'];
-            $age=$row['age'];
-            $skills=$row['skills'];
+            // $description=$row['description'];
+            // $language=$row['language'];
+            // $expirence=$row['expirence'];
+            // $age=$row['age'];
+            // $skills=$row['skills'];
             $avatar=$row['avatar'];
             $date=$row['date'];
             $status=$row['status'];
             $code=$row['code'];
+            $requirement1=$row['requirement1'];
               ?>
               <div class="blog1">
                 <a href="description.php?id=<?php echo $id; ?>">
@@ -203,10 +204,10 @@
                     <div> 
                     <span style="font-size:14px;">
                     <?php 
-                      if (strlen($description)>140) {
-                          $string=substr($description, 0,140)."...";
+                      if (strlen($requirement1)>140) {
+                          $string=substr($requirement1, 0,140)."...";
                           }else{
-                          $string=$description;
+                          $string=$requirement1;
                           }
                           echo $string;
 

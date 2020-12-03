@@ -69,15 +69,19 @@
             $firm=$row['firm'];
             $location=$row['location'];
             $position=$row['position'];
-            $salary=$row['salary'];
-            $description=$row['description'];
-            $language=$row['language'];
-            $expirence=$row['expirence'];
-            $age=$row['age'];
-            $skills=$row['skills'];
+            $salary=$row['salary'];  
             $avatar=$row['avatar'];
             $date=$row['date'];
             $status=$row['status'];
+
+            $requirement1=$row['requirement1'];
+            $requirement2=$row['requirement2'];
+            $requirement3=$row['requirement3'];
+            $requirement4=$row['requirement4'];
+            $requirement5=$row['requirement5'];
+            $requirement6=$row['requirement6'];
+            $requirement7=$row['requirement7'];
+            
             ?>
         <div class="jobs"> 
             <div class="t-head">
@@ -105,51 +109,52 @@
             <?php echo $salary ?> / Month
 
             </span> 
-            </div>
+            </div> 
 
-            <b class="j-title">
-            Urgently hiring 
-            </b>
+            <div> <br>
+            <b>REQUIREMENTS</b> <br><br>
 
-            <div>
-            <span style="font-size:14px;">
-            <?php echo $description ;
-
-            if (!empty($expirence)) { ?>
-            <br><br><br>
-            <b>EXPERIENCE</b>
-            <br> <?php echo $expirence ;
-
-            }
-
-            if (!empty($language)) { ?>
+            <?php
+            if (!empty($requirement1)) { ?>
             
-            <br><br><br> <b> LANGUAGE SKILL</b> <br>
-
-            <?php echo $language;
+            1) <br> <?php echo $requirement1 ;
 
             }
 
-            if (!empty($skills)) { ?>
-           <br><br><br> 
-           <b>TECHNICALS</b>
-
-           <br>
-           <?php echo $skills ;
+            if (!empty($requirement2)) { ?>
+            
+            <br><br>
+            2)  <br> <?php echo $requirement2 ;
 
             }
+
+            if (!empty($requirement3)) { ?>
+           <br> <br>
+            3)  <br> <?php echo $requirement3 ;
+
+            }
+
+            if (!empty($requirement4)) { ?>
+              <br><br> 3) <br> 
+               <?php echo $requirement4 ;
+   
+               }
+            if (!empty($requirement5)) { ?>
+                <br><br> 
+                3)  <br> <?php echo $requirement5 ;
+     
+                 }
+            if (!empty($requirement6)) { ?>
+                  <br><br> 
+                  3)  <br> <?php echo $requirement6 ;
+       
+                   }
 
            
-           if (!empty($age)) { ?>
+           if (!empty($requirement7)) { ?>
             
-            <br><br><br>
-           
-            <b>AGE RANGE:</b> 
-
-            <br>
-            <?php echo $age ?> Years </span>
-
-           <?php }
+            <br><br> 
+            <br> 4)  <br> <?php echo $requirement7 ; }
            ?>
            
            

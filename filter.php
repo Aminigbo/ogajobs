@@ -85,11 +85,11 @@
              $location=$row['location'];
              $position=$row['position'];
              $salary=$row['salary'];
-             $description=$row['description'];
-             $language=$row['language'];
-             $expirence=$row['expirence'];
-             $age=$row['age'];
-             $skills=$row['skills'];
+             $requirement1=$row['requirement1'];
+            //  $language=$row['language'];
+            //  $expirence=$row['expirence'];
+            //  $age=$row['age'];
+            //  $skills=$row['skills'];
              $avatar=$row['avatar'];
              $date=$row['date'];
              $status=$row['status']; 
@@ -133,10 +133,10 @@
                     <div> 
                     <span style="font-size:14px;">
                     <?php 
-                      if (strlen($description)>140) {
-                          $string=substr($description, 0,140)."...";
+                      if (strlen($requirement1)>140) {
+                          $string=substr($requirement1, 0,140)."...";
                           }else{
-                          $string=$description;
+                          $string=$requirement1;
                           }
                           echo $string;
 

@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="theme-color" content=" #005B49" />
-   <title>Oga Jobs</title>
+   <title>Jobpadi - Admin</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -56,11 +56,11 @@
             <img src="../assets/vectors/1.png" class="" style="width:10%"><br>
 
                 <b class="j-title">
-                    SoftWare Engineering
+                    Jobpadi
                 </b> <br>
 
                 <span style="font-size:13px;">
-                Harvoxx engineering
+                Kedosic Innovation
                 </span> <br>
                 <span style="font-size:13px;">
                 Port harcout
@@ -91,14 +91,22 @@
                     <input type="text" name="position" id="" placeholder="Enter Position">
                     <input type="text" name="salary" id="" placeholder="Enter salary / month">
 
-                    <textarea style="padding:10px;height:170px;" name="desc" id="" placeholder="Enter job description"></textarea> <br>
+                    <!-- <textarea style="padding:10px;height:170px;" name="desc" id="" placeholder="Enter job description"></textarea> <br> -->
                     <br>
-                    <textarea style="padding:10px;height:170px;" name="responsibility" id=""  rows="5" placeholder="Enter employee responsibility"></textarea> <br>
+                    <!-- <textarea style="padding:10px;height:170px;" name="responsibility" id=""  rows="5" placeholder="Enter employee responsibility"></textarea> <br> -->
 
-                    <input type="text" name="skills" id="" placeholder="Required skills">
+                    <!-- <input type="text" name="skills" id="" placeholder="Required skills">
                     <input type="text" name="language" id=""  placeholder="Language skills">
-                    <input type="text" name="expirence" id=""  placeholder="Expirence">
-                    <input type="text" name="age" id=""  placeholder="Required Age Range"> 
+                    <input type="text" name="expirence" id=""  placeholder="Expirence"> -->
+
+                    <input type="text" name="requirement1" id=""  placeholder="Requirement 1"> 
+                    <input type="text" name="requirement2" id=""  placeholder="Requirement 2">
+                    <input type="text" name="requirement3" id=""  placeholder="Requirement 3">
+                    <input type="text" name="requirement4" id=""  placeholder="Requirement 4">
+                    <input type="text" name="requirement5" id=""  placeholder="Requirement 5">
+                    <input type="text" name="requirement6" id=""  placeholder="Requirement 6">
+                    <input type="text" name="requirement7" id=""  placeholder="Requirement 7">
+
                     <br><br><br>
                     <label  style="width:20%;height:;background-color:#eee;
                     border-radius:10px;padding:30px 10px;text-align:center;color:grey;

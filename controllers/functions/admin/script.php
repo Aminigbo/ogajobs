@@ -51,13 +51,14 @@ if (isset($_POST['add'])) {
     $firm  = mysqli_real_escape_string($conn, $_POST['firm']) ;
     $location  = mysqli_real_escape_string($conn, $_POST['location']) ;
     $position  = mysqli_real_escape_string($conn, $_POST['position']) ;
-    $salary  = mysqli_real_escape_string($conn, $_POST['salary']) ;
-    $desc  = mysqli_real_escape_string($conn, $_POST['desc']) ;
-    $responsibility  = mysqli_real_escape_string($conn, $_POST['responsibility']) ;
-    $language  = mysqli_real_escape_string($conn, $_POST['language']) ;
-    $expirence  = mysqli_real_escape_string($conn, $_POST['expirence']) ;
-    $age  = mysqli_real_escape_string($conn, $_POST['age']) ;
-    $skills  = mysqli_real_escape_string($conn, $_POST['skills']) ;
+    $salary  = mysqli_real_escape_string($conn, $_POST['salary']) ; 
+    $requirement1  = mysqli_real_escape_string($conn, $_POST['requirement1']) ; 
+    $requirement2  = mysqli_real_escape_string($conn, $_POST['requirement2']) ; 
+    $requirement3  = mysqli_real_escape_string($conn, $_POST['requirement3']) ; 
+    $requirement4  = mysqli_real_escape_string($conn, $_POST['requirement4']) ; 
+    $requirement5  = mysqli_real_escape_string($conn, $_POST['requirement5']) ; 
+    $requirement6  = mysqli_real_escape_string($conn, $_POST['requirement6']) ; 
+    $requirement7  = mysqli_real_escape_string($conn, $_POST['requirement7']) ; 
 
     $surv_team_2_dp  = $_FILES['avatar']['name'];
     $filetmpname4 = $_FILES['avatar']['tmp_name'];
@@ -68,14 +69,14 @@ if (isset($_POST['add'])) {
     $save_img = "job-avatars/".$surv_team_2_dp;
     $img_success=move_uploaded_file($filetmpname4, $Move); 
     $date = date("Y-m-d");
-    if (empty($firm) || empty($location)|| empty($position)|| empty($skills)|| empty($salary)
-    || empty($desc)|| empty($responsibility)|| empty($language)|| empty($expirence)|| empty($age)) {
+    if (empty($firm) || empty($location)|| empty($position)|| empty($salary) || empty($requirement1)|| empty($requirement2)|| empty($requirement3)
+    || empty($requirement4)|| empty($requirement5)|| empty($requirement6)|| empty($requirement7)) {
         header("location:../../../admin.php?callback=empty-field");
     }else{
-        $query = "INSERT INTO jobs (category,firm, `location`, position, salary,`description`,responsibility,`language`,expirence,age,skills,avatar,`date`,`status`,code) 
-      VALUES('$class','$firm','$location', '$position', '$salary', '$desc', '$responsibility', '$language','$expirence', '$age', '$skills', '$save_img','$date','0','$code')";
+        $query = "INSERT INTO jobs (category,firm, `location`, position, salary, avatar,`date`,`status`,code,requirement1,requirement2,requirement3,requirement4,requirement5,requirement6,requirement7) 
+      VALUES('$class','$firm','$location', '$position', '$salary','$save_img','$date','1','$code','$requirement1','$requirement2','$requirement3','$requirement4','$requirement5','$requirement6','$requirement7')";
       $success= mysqli_query($conn, $query);
-      header("location:../../../admin.php?callback=success");
+      header("location:../../../admin/create.php?callback=success");
     }
 }
 

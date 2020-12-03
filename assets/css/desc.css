@@ -369,10 +369,11 @@
     }
   
     .by{
+      /* display: none; */
       position: absolute;
       width: 100%; 
       left: 0px;
-      /* top: 2300px; */
+      bottom: 0px;
       background:#ffffff;
       color:#273E47;
       text-align: center;
