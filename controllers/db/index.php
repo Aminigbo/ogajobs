@@ -4,11 +4,11 @@ session_start();
 
 // $dbservername = 'localhost';
 
-// $dbpassword = 'Emmanueld45@';
+// $dbpassword = 'jobpadiUser1';
                 
-// $dbusername = 'hthubcom_hthub';
+// $dbusername = 'jobpadi';
                 
-// $dbname = 'hthubcom_hthub';
+// $dbname = 'jobpadi';
 
 
 $dbservername = 'localhost';
