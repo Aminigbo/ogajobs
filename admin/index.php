@@ -1,7 +1,7 @@
 <?php include '../controllers/db/index.php';
-
+session_start();
 function isLoggedIn() {
-    if (isset($_SESSION['user'])) {
+    if (isset($_SESSION['access'])) {
       return true;
     }else{
       return false;
@@ -191,26 +191,11 @@ function isLoggedIn() {
         <div class="auth" style="position:fixed;top:0px;left:0px;background-color:rgb(0,0,0,1);
         height:100%;width:100%;z-index:10000;display: ;">
 
-        <form method="POST" style="width:50%;margin-left:25%;margin-top:15%;text-align:center;">
+        <form method="POST" action="script.php" style="width:50%;margin-left:25%;margin-top:15%;text-align:center;">
             <input class="access" type="text" name="accessPin" style="padding:10px;width:50%;border-radius:10px;
             border:none;font-weight:bold;font-size:43px;" placeholder="Access Token">
             <input type="submit" name="access" style="display:none">
-        </form>
-        <?php 
-        
-        if (isset($_POST['access'])) {  
-            $accessPin = mysqli_real_escape_string($conn, $_POST['accessPin']) ; 
-                
-            $query = "SELECT * FROM padiadmin WHERE access='$accessPin' ";
-            $results = mysqli_query($conn, $query);
-                
-            if (mysqli_num_rows($results)) { // user found
-                $logged_in_user = mysqli_fetch_assoc($results);
-                $_SESSION['access'] = $logged_in_user; 
-            }
-        }
-        
-        ?>
+        </form> 
         </div>
         
 

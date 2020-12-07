@@ -2,21 +2,21 @@
 
 session_start(); 
 
-// $dbservername = 'localhost';
-
-// $dbpassword = 'jobpadiUser1';
-                
-// $dbusername = 'jobpadi';
-                
-// $dbname = 'jobpadi';
-
-
 $dbservername = 'localhost';
+
+$dbpassword = 'jobpadiUser1';
+                
+$dbusername = 'jobpadic_jobpadi';
+                
+$dbname = 'jobpadic_jobpadi';
+
+
+// $dbservername = 'localhost';
  
-$dbusername = 'root';
+// $dbusername = 'root';
  
-$dbpassword = '';
+// $dbpassword = '';
  
-$dbname = 'jobpadi';
+// $dbname = 'jobpadi';
 
 $conn = mysqli_connect($dbservername, $dbusername, $dbpassword, $dbname);

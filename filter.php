@@ -94,6 +94,23 @@
              $date=$row['date'];
              $status=$row['status']; 
              $code = $row['code'];
+             $currentDate=date("Y-m-d");
+
+             $requirement2=$row['requirement2'];
+             $endTime=strtotime($currentDate);
+        $strtTime=strtotime($date);
+        $dif= abs($endTime-$strtTime);
+        $daysCount= $dif/86400;
+        $daysCount= intval($daysCount);
+        if ($daysCount==0) {
+          $daysCount="posted today";
+        }elseif ($daysCount==1) {
+          $daysCount="Yesterday";
+        }elseif ($daysCount>1 && $daysCount<14) {
+          $daysCount=$daysCount."days ago";
+        }else{
+          $daysCount=$date;
+        }
               ?> 
               <div class="blog1">
                 <a href="description.php?id=<?php echo $id; ?>">
@@ -133,8 +150,8 @@
                     <div> 
                     <span style="font-size:14px;">
                     <?php 
-                      if (strlen($requirement1)>140) {
-                          $string=substr($requirement1, 0,140)."...";
+                      if (strlen($requirement1)>75) {
+                          $string=substr($requirement1, 0,75)."...";
                           }else{
                           $string=$requirement1;
                           }
@@ -142,9 +159,23 @@
 
                           ?>
                     </span>
+
+                    <br> <br>
+
+                    <span style="font-size:14px;">
+                    <?php 
+                      if (strlen($requirement2)>75) {
+                          $string=substr($requirement2, 0,75)."...";
+                          }else{
+                          $string=$requirement2;
+                          }
+                          echo $string;
+
+                        ?>
+                    </span>
                     </div> <br>
                     <span style="font-size:14px;float:right;color:#00B894;">
-                        2days ago
+                    <?php echo $daysCount; ?>
                     </span>
 
                      <br>
