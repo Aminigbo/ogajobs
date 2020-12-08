@@ -173,7 +173,7 @@
         }elseif ($daysCount==1) {
           $daysCount="Yesterday";
         }elseif ($daysCount>1 && $daysCount<14) {
-          $daysCount=$daysCount."days ago";
+          $daysCount=$daysCount." days ago";
         }else{
           $daysCount=$date;
         }
@@ -190,21 +190,23 @@
 
 
                   <div class="blur">
-                  <b style="color:#00B894;font-size:20px;position:absolute;top:0px;right:5px;">
+                  <b style="color:#00B894;font-size:20px;position:absolute;top:6px;right:10px;">
                     <?php echo $code ?>
                   </b>
                     <div style="padding:10px;font-size:15px;">
 
                     <img src="assets/vectors/1.png" class="" style="width:10%"><br>
                     <br>
-                    <b class="j-title">
+                    <b class="j-title" style="font-size:20px;">
                       <?php echo $position; ?>
                     </b> <br>
 
-                    <span style="font-size:13px;">
+                    <span style="font-size:14px;">
+                    <span class="fa fa-building-o" style="color:#00B894;"></span> &nbsp;
                     <?php echo $firm; ?>
                     </span> <br>
-                    <span style="font-size:13px;">
+                    <span style="font-size:14px;">
+                    <span class="fa fa-map-marker " style="color:#00B894;"></span>&nbsp;&nbsp;
                     <?php echo $location; ?>
                     </span> <br> <br>
 
@@ -214,13 +216,16 @@
 
                     </span>
                     </div>
-                    <br>
+                    
+                    <div style="margin-top:10px;">
                     <b class="j-title" style="font-size:21px;color:#00B894;"> 
-                    Urgently hiring
+                    Urgently Hiring
                     </b>
+                    </div>
 
                     <div> 
-                    <span style="font-size:14px;">
+                    <div style="font-size:14px;margin-top:15px;">
+                    <span class="fa fa-check-circle" style="color:#00B894;"></span> &nbsp;
                     <?php 
                       if (strlen($requirement1)>75) {
                           $string=substr($requirement1, 0,75)."...";
@@ -230,9 +235,10 @@
                           echo $string;
 
                         ?>
-                    </span> <br> <br>
+                    </div>
 
-                    <span style="font-size:14px;">
+                    <div style="font-size:14px;margin-top:10px;">
+                    <span class="fa fa-check-circle" style="color:#00B894;"></span> &nbsp;
                     <?php 
                       if (strlen($requirement2)>75) {
                           $string=substr($requirement2, 0,75)."...";
@@ -242,16 +248,19 @@
                           echo $string;
 
                         ?>
-                    </span>
+                    </div>
 
-                    </div> <br>
-                    <span style="font-size:14px;float:right;color:#00B894;">
+                    </div>
+                    <span style="font-size:14px;color:#00B894;position:absolute;bottom:30px;">
                        <?php echo $daysCount; ?>
                     </span>
 
                      <br>
                       
-                      <b style="float: ;font-size:20px;">View</b>
+                      <b style="float: ;font-size:20px;position:absolute;bottom:30px;color:#00B894;right:10px;">View</b>
+
+
+                      <i style="float: ;font-size:14px;position:absolute;bottom:5px;color:white;">Deadline: 12 Dec, 2020</i>
                     </div>
                   </div>
                 </a>
